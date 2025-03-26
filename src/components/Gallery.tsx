@@ -29,9 +29,9 @@ export default function Gallery() {
   return (
     <div className='flex flex-col flex-grow'>
       <div className="flex flex-row gap-4 flex-wrap whitespace-nowrap uppercase">
-        {categories.map((c) => <div className='flex flex-row' onClick={() =>  setSelectedCategory(c.value)}><Typography className='cursor-pointer' variant='p' color={selectedCategory === c.value ? 'text-[#eb2f5b]' : 'text-[#aaaaaa]'}>{c.label}</Typography></div>)}
+        {categories.map((c) => <div className='flex flex-row' onClick={() =>  setSelectedCategory(c.value)}><Typography className='cursor-pointer md:text-2xl' variant='p' color={selectedCategory === c.value ? 'text-[#eb2f5b]' : 'text-[#aaaaaa]'}>{c.label}</Typography></div>)}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 md:mt-12">
         <AnimatePresence>
           {filteredProjects.map((project) => (
             <motion.div
@@ -42,10 +42,10 @@ export default function Gallery() {
               className="relative overflow-hidden"
             >
               <div className="relative group">
-                <img src={project.image} alt={project.title} className="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src={project.image} alt={project.title} className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-300 md:aspect-[1/1.2]" />
                 <div className="absolute bottom-0 left-0 right-0 bg-[#eb2f5b] text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-lg font-bold">{project.title}</h3>
-                  <p className="text-sm">{project.category}</p>
+                  <h3 className="text-lg font-bold md:text-3xl">{project.title}</h3>
+                  <p className="text-sm md:text-3xl">{project.category}</p>
                 </div>
               </div>
             </motion.div>

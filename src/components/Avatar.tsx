@@ -10,16 +10,18 @@ const sizeClasses = {
 };
 
 const Avatar = ({
+  className,
   src,
   hasBorder = true,
   size = 'md'
 }: {
+  className?: string;
   src: string;
   hasBorder?: boolean;
   size?: Size;
 }) => {
   return (
-    <div className={`${sizeClasses[size]} aspect-square relative rounded-full bg-gray-300 flex items-center justify-center overflow-hidden shadow-lg m-4 ${hasBorder ? 'border-8 border-[#FEFEFE]' : ''}`}>
+    <div className={`${sizeClasses[size]} aspect-square relative rounded-full bg-gray-300 flex items-center justify-center overflow-hidden shadow-lg m-4 ${hasBorder ? 'border-8 border-[#FEFEFE]' : ''} ${className}`}>
       <Image
         src={src}
         alt="Avatar"

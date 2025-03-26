@@ -8,7 +8,7 @@ interface SectionProps {
   padding?: string;
 }
 
-const Section: React.FC<SectionProps> = ({ children, className, background, padding = 'px-4' }) => {
+const Section: React.FC<SectionProps> = ({ children, className, background, padding = 'px-4 md:px-8' }) => {
   return (
     <section className={cn(
       'flex justify-center items-center w-full',

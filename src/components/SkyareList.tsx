@@ -11,7 +11,7 @@ const SquareList: React.FC<SquareListProps> = ({ items }) => {
       {items.map((item, index) => (
         <li key={index} className="relative pl-5">
           <span className="absolute left-0 top-1.5 w-2 h-2 bg-[#777777]"></span>
-          <Typography className='text-[#777777]' fontFamily='CourierNew' variant='p'>{item}</Typography>
+          <Typography className='text-[#777777] md:text-base' fontFamily='CourierNew' variant='p'>{item}</Typography>
         </li>
       ))}
     </ul>

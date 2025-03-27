@@ -4,7 +4,7 @@ type Size = 'sm' | 'md' | 'lg' | 'xl';
 
 const sizeClasses = {
   sm: 'w-24',
-  md: 'w-48',
+  md: 'w-36',
   lg: 'w-64',
   xl: 'w-80',
 };
@@ -13,7 +13,7 @@ const Avatar = ({
   className,
   src,
   hasBorder = true,
-  size = 'md'
+  size = 'md',
 }: {
   className?: string;
   src: string;
@@ -21,13 +21,10 @@ const Avatar = ({
   size?: Size;
 }) => {
   return (
-    <div className={`${sizeClasses[size]} aspect-square relative rounded-full bg-gray-300 flex items-center justify-center overflow-hidden shadow-lg m-4 ${hasBorder ? 'border-8 border-[#FEFEFE]' : ''} ${className}`}>
-      <Image
-        src={src}
-        alt="Avatar"
-        fill
-        className="object-cover"
-      />
+    <div
+      className={`${sizeClasses[size]} aspect-square relative rounded-full bg-gray-300 flex items-center justify-center overflow-hidden shadow-lg m-4 ${hasBorder ? 'border-8 border-[#FEFEFE]' : ''} ${className}`}
+    >
+      <Image src={src} alt="Avatar" fill className="object-cover" />
     </div>
   );
 };

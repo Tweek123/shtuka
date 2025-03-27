@@ -16,32 +16,31 @@ const Slider = ({ children, className }: SliderProps) => {
 
   return (
     <div className={`w-full relative ${className}`}>
-      <button 
-        className="custom-prev !z-50 absolute" 
+      <button
+        className="custom-prev !z-50 absolute"
         onClick={() => {
-          swiperRef.current?.slidePrev()}}
+          swiperRef.current?.slidePrev();
+        }}
       >
         ←
       </button>
       <Swiper
         modules={[Navigation]}
-        spaceBetween={50}
         slidesPerView={1}
         loop={true}
         freeMode={true}
+        spaceBetween={50}
         autoHeight
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
       >
         {childrenArray.map((child, index) => (
-          <SwiperSlide key={index}>
-            {child}
-          </SwiperSlide>
+          <SwiperSlide key={index}>{child}</SwiperSlide>
         ))}
       </Swiper>
-      <button 
-        className="custom-next !z-50 absolute" 
+      <button
+        className="custom-next !z-50 absolute"
         onClick={() => swiperRef.current?.slideNext()}
       >
         →

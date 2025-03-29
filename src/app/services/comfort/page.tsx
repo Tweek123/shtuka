@@ -63,7 +63,7 @@ export default function Services() {
     <main className="">
       <Section>
         <Container className="">
-          <div className="lg:-mx:16 -mx-4 -my-8 flex min-h-screen flex-grow flex-col items-center justify-center bg-[#111] md:-mx-8 md:-my-16">
+          <div className="lg:-mx:16 -mx-4 -my-8 flex min-h-screen flex-grow flex-col items-center justify-center bg-[#111] md:-mx-8 md:-my-12 lg:-my-16">
             <Typography
               className="text-center text-6xl font-normal uppercase text-white md:text-8xl lg:text-6xl"
               variant="h1"
@@ -96,13 +96,13 @@ export default function Services() {
                       {items.map(({ text, subtext }) => (
                         <div className="flex flex-col">
                           <Typography
-                            className="text-primary font-womby mb-4 whitespace-pre text-center text-3xl font-bold uppercase leading-tight text-white md:text-center md:text-7xl lg:mb-2"
+                            className="text-primary font-womby mb-4 text-center text-3xl font-bold uppercase leading-tight text-white md:whitespace-pre md:text-center md:text-7xl lg:mb-2"
                             variant="h1"
                           >
                             {text}
                           </Typography>
                           <Typography
-                            className="font-VarelaRound mb-6 whitespace-pre text-center text-sm font-light uppercase leading-relaxed text-black md:mb-8 md:text-center md:text-sm"
+                            className="font-VarelaRound mb-6 text-center text-sm font-light uppercase leading-relaxed text-black md:mb-8 md:whitespace-pre md:text-center md:text-sm"
                             variant="h1"
                           >
                             {subtext}

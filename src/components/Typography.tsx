@@ -7,7 +7,14 @@ interface TypographyProps {
   className?: string;
   color?: string;
   background?: string;
-  fontFamily?: 'primary' | 'secondary' | 'womby' | 'Metal' | 'VarelaRound' | 'CourierNew' | 'ArialBlack';
+  fontFamily?:
+    | 'primary'
+    | 'secondary'
+    | 'womby'
+    | 'Metal'
+    | 'VarelaRound'
+    | 'CourierNew'
+    | 'ArialBlack';
 }
 
 const variantMapping = {
@@ -24,7 +31,14 @@ const styles = {
   p: 'text-base leading-relaxed',
 };
 
-const Typography: React.FC<TypographyProps> = ({ variant, children, className, color = 'text-primary', background, fontFamily = 'VarelaRound' }) => {
+const Typography: React.FC<TypographyProps> = ({
+  variant,
+  children,
+  className,
+  color = 'text-primary',
+  background,
+  fontFamily = 'VarelaRound',
+}) => {
   const Tag = variantMapping[variant] as keyof JSX.IntrinsicElements;
 
   return (

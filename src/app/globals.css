@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --bubblegum-pink: #FF69B4;
-  --candy-purple: #E31E54;
-  --sweet-blue: #40E0FF;
-  --lemon-yellow: #FFE45C;
-  --mint-green: #98FF98;
-  --bubble-orange: #FFB347;
-  --text-dark: #2D0C30;
-  --text-light: #FFFFFF;
-  --bg-gradient-start: #FF69B4;
-  --bg-gradient-end: #E31E54;
+  --bubblegum-pink: #ff69b4;
+  --candy-purple: #e31e54;
+  --sweet-blue: #40e0ff;
+  --lemon-yellow: #ffe45c;
+  --mint-green: #98ff98;
+  --bubble-orange: #ffb347;
+  --text-dark: #2d0c30;
+  --text-light: #ffffff;
+  --bg-gradient-start: #ff69b4;
+  --bg-gradient-end: #e31e54;
 }
 
 @font-face {
@@ -36,11 +36,24 @@
 }
 
 html {
-  font-size: calc(14px + 0.5vw); /* Пример: 14px + 0.5% от ширины экрана */}
+  font-size: calc(16 * (100vw / 1280));
+
+  @media (max-width: 1024px) {
+    font-size: calc(16 * (100vw / 1024));
+  }
+
+  @media (max-width: 768px) {
+    font-size: calc(16 * (100vw / 768));
+  }
+  @media (max-width: 640px) {
+    font-size: calc(16 * (100vw / 640));
+  }
+}
 
 body {
   color: var(--text-dark);
-  background: linear-gradient(135deg, 
+  background: linear-gradient(
+    135deg,
     var(--bubblegum-pink) 0%,
     var(--candy-purple) 100%
   );
@@ -101,7 +114,8 @@ body {
 }
 
 .bubble-gradient {
-  background: linear-gradient(45deg,
+  background: linear-gradient(
+    45deg,
     var(--bubblegum-pink),
     var(--candy-purple),
     var(--sweet-blue),
@@ -112,9 +126,15 @@ body {
 }
 
 @keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .bubble-border {
@@ -131,7 +151,8 @@ body {
   right: -3px;
   bottom: -3px;
   border-radius: 30px;
-  background: linear-gradient(45deg,
+  background: linear-gradient(
+    45deg,
     var(--bubblegum-pink),
     var(--candy-purple),
     var(--sweet-blue),
@@ -142,20 +163,22 @@ body {
 }
 
 @keyframes borderRotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .text-balance {
   text-wrap: balance;
 }
 
-
 .swiper-button-next,
 .swiper-button-prev {
   display: none !important;
 }
-
 
 .custom-arrow {
   position: absolute;
@@ -180,7 +203,8 @@ body {
   position: relative;
 }
 
-.custom-prev, .custom-next {
+.custom-prev,
+.custom-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

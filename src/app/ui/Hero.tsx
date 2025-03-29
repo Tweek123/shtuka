@@ -62,7 +62,7 @@ const Hero = () => {
               <div className="flex flex-row justify-between gap-2 mb-2 lg:justify-normal">
                 <Divider orientation="vertical" />
                 <Typography
-                  className="px-2 py-1 text-lg md:text-2xl "
+                  className="px-2 py-1 text-lg md:text-2xl"
                   variant="h1"
                   color="text-white"
                   background="bg-dark-custom"

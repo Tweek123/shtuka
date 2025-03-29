@@ -42,7 +42,7 @@ export default function Home() {
       <DifficultSolutions />
       <ProjectCost />
       <GalleryPortfolio />
-      {/* <Quotes /> */}
+      <Quotes />
       <Consultation />
       <Contacts />
     </main>

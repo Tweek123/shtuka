@@ -8,24 +8,18 @@ export default function DifficultSolutions() {
   return (
     <Section>
       <Container className="lg:!pb-0">
-        <div className="flex flex-col flex-1">
+        <div className="flex flex-1 flex-col">
           <Typography
             variant="h1"
-            className="text-center mb-16 md:text-3xl leading-[1.5]"
+            className="mb-8 text-center font-extrabold leading-[1.5] md:text-3xl"
             color="text-black"
             fontFamily="womby"
           >
             <Underline className="leading-[1.18]">
-              СЛОЖНЫЕ РЕАЛИЗОВАННЫЕ
-            </Underline>
-            <br className="hidden md:block" />
-            <Underline className="leading-[1.18]">РЕШЕНИЯ</Underline>
-            <br className="hidden md:block" />
-            <Underline className="leading-[1.18]">
-              РЕШЕНИЯ НА НАШИХ ОБЪЕКТАХ:
+              СЛОЖНЫЕ РЕАЛИЗОВАННЫЕ РЕШЕНИЯ РЕШЕНИЯ НА НАШИХ ОБЪЕКТАХ:
             </Underline>
           </Typography>
-          <div className="grid grid-cols-1 -mx-4 gap-12 md:grid-cols-2 md:gap-2  lg:grid-cols-3 xl:grid-cols-4">
+          <div className="-mx-4 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-2 lg:grid-cols-3 xl:grid-cols-4">
             <Project
               className="sm:aspect-[2/1] md:aspect-square xl:aspect-[1/1.2]"
               src="/images/projects/1.jpg"

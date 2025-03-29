@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 import Header from '@/components/Header';
 
-const inter = Inter({ subsets: ["latin", "cyrillic"] });
+const inter = Inter({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata: Metadata = {
-  title: "Shtuka",
-  description: "Modern portfolio website",
+  title: 'Shtuka',
+  description: 'Modern portfolio website',
 };
 
 export default function RootLayout({
@@ -17,8 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gradient-to-br from-peach-light via-banana-light to-mango-light min-h-screen`}>
-        <Header />
+      <body
+        className={`${inter.className} from-peach-light via-banana-light to-mango-light min-h-screen bg-gradient-to-br`}
+      >
+        {/* <Header /> */}
         {children}
       </body>
     </html>

@@ -58,8 +58,8 @@ export default function Gallery() {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="flex flex-col flex-grow">
-      <div className="flex flex-row gap-4 flex-wrap whitespace-nowrap uppercase">
+    <div className="flex flex-grow flex-col">
+      <div className="flex flex-row flex-wrap gap-4 whitespace-nowrap uppercase">
         {categories.map((c) => (
           <div
             className="flex flex-row"
@@ -79,7 +79,7 @@ export default function Gallery() {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mt-8 md:grid-cols-3">
+      <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3">
         <AnimatePresence>
           {filteredProjects.map((project) => (
             <motion.div
@@ -89,17 +89,19 @@ export default function Gallery() {
               exit={{ opacity: 0 }}
               className="relative overflow-hidden"
             >
-              <div className="relative group">
+              <div className="group relative">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full aspect-[1.5/1] object-cover grayscale hover:grayscale-0 transition-all duration-300 md:aspect-[1/1.2] lg:aspect-[1.5/1]"
+                  className="aspect-[1.5/1] w-full object-cover grayscale transition-all duration-300 hover:grayscale-0 md:aspect-[1/1.2] lg:aspect-[1.5/1]"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-[#eb2f5b] text-white p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <div className="absolute bottom-0 left-0 right-0 translate-y-full transform bg-[#eb2f5b] p-4 text-white transition-transform duration-300 group-hover:translate-y-0">
                   <h3 className="text-lg font-bold md:text-3xl">
                     {project.title}
                   </h3>
-                  <p className="text-sm md:text-3xl">{project.category}</p>
+                  <p className="text-sm uppercase md:text-3xl lg:text-sm">
+                    {project.category}
+                  </p>
                 </div>
               </div>
             </motion.div>

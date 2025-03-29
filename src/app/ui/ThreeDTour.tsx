@@ -5,13 +5,13 @@ import Section from '@/components/Section';
 
 export default function ThreeDTour() {
   return (
-    <Section className="sm:py-8" background="bg-[#353535]">
+    <Section className="" background="bg-[#353535]">
       <Container>
-        <div className="flex flex-col flex-grow bg-[#353535] min-h-screen">
-          <div className="flex flex-col gap-8 items-center flex-grow mb-4 text-center md:mb-12">
+        <div className="flex min-h-screen flex-grow flex-col bg-[#353535]">
+          <div className="mb-4 flex flex-grow flex-col items-center gap-8 text-center md:mb-12 lg:mb-16">
             <div className="flex flex-col">
               <Typography
-                className="md:text-3xl"
+                className="font-extrabold md:text-3xl"
                 variant="h1"
                 fontFamily="ArialBlack"
                 color="text-white"
@@ -19,7 +19,7 @@ export default function ThreeDTour() {
                 СДЕЛАЕМ 3D ТУР ВАШЕГО ПРОЕКТА
               </Typography>
               <Typography
-                className="md:text-3xl"
+                className="text-2.5xl font-ArialBlack font-light leading-tight text-black md:text-3xl lg:text-xl"
                 variant="h2"
                 fontFamily="ArialBlack"
                 color="text-white"
@@ -28,19 +28,19 @@ export default function ThreeDTour() {
               </Typography>
             </div>
           </div>
-          <div className="flex flex-col -mx-4 min-h-screen md:-mx-8">
+          <div className="flex min-h-screen flex-col">
             <iframe
-              className="mb-4 aspect-video flex-grow max-h-screen  md:mb-12"
+              className="mb-4 aspect-video max-h-screen flex-grow md:mb-12 lg:mb-16"
               width="100%"
               allow="xr-spatial-tracking; gyroscope; accelerometer"
               scrolling="no"
               src="https://kuula.co/share/collection/7bCfS?logo=1&amp;info=1&amp;fs=1&amp;vr=0&amp;sd=1&amp;thumbs=1"
             ></iframe>
           </div>
-          <div className="flex flex-col gap-8 items-center flex-grow text-center md:mb-4">
+          <div className="flex flex-grow flex-col items-center gap-8 text-center md:mb-4 lg:mb-0">
             <div className="flex flex-col">
               <Typography
-                className="md:text-3xl"
+                className="font-extrabold md:text-3xl"
                 variant="h1"
                 fontFamily="ArialBlack"
                 color="text-white"
@@ -48,7 +48,7 @@ export default function ThreeDTour() {
                 ХОТИТЕ ТАК ЖЕ?
               </Typography>
               <Typography
-                className="md:text-3xl"
+                className="text-2.5xl font-ArialBlack font-light leading-tight text-black md:text-3xl lg:text-xl"
                 variant="h2"
                 fontFamily="ArialBlack"
                 color="text-white"
@@ -57,7 +57,7 @@ export default function ThreeDTour() {
               </Typography>
             </div>
             <Button className="md:hidden">РАССЧИТАТЬ ПРОЕКТ</Button>
-            <Button className="hidden md:block text-nowrap" size="lg">
+            <Button className="hidden text-nowrap md:block" size="lg">
               РАССЧИТАТЬ ПРОЕКТ
             </Button>
           </div>

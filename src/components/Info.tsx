@@ -1,7 +1,7 @@
-import React from "react";
-import Typography from "./Typography";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import React from 'react';
+import Typography from './Typography';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
 const Info = ({
   icon,
@@ -24,10 +24,9 @@ const Info = ({
         className="mb-8 size-16 text-[#ce528e] md:mb-8 md:size-12 lg:mb-4"
         icon={icon}
       />
-      {typeof text === "string" ? (
+      {typeof text === 'string' ? (
         <Typography
-          //ce528e
-          className="mb-4 font-normal text-[#111] hover:text-[#ce528e] md:text-3xl lg:mb-2 lg:text-xl xl:mb-2"
+          className="lg:text-3x mb-4 font-normal text-[#111] hover:text-[#ce528e] md:text-3xl lg:mb-4 lg:text-2xl"
           fontFamily="womby"
           variant="h1"
         >
@@ -36,9 +35,9 @@ const Info = ({
       ) : (
         text
       )}
-      {typeof subtext === "string" ? (
+      {typeof subtext === 'string' ? (
         <Typography
-          className="text-base font-light text-[#555] group-hover:text-[#ce528e] md:text-xl lg:text-base"
+          className="text-base font-light text-black group-hover:text-[#ce528e] md:text-xl lg:text-xs"
           fontFamily="womby"
           variant="p"
         >

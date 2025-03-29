@@ -7,13 +7,20 @@ interface DividerProps {
   orientation?: 'horizontal' | 'vertical';
 }
 
-const Divider: React.FC<DividerProps> = ({ className, thickness = '3px', color = 'bg-dark-custom', orientation = 'horizontal' }) => {
-  const style = orientation === 'horizontal' 
-    ? { height: thickness } 
-    : { width: thickness };
+const Divider: React.FC<DividerProps> = ({
+  className,
+  thickness = '3px',
+  color = '',
+  orientation = 'horizontal',
+}) => {
+  const style =
+    orientation === 'horizontal' ? { height: thickness } : { width: thickness };
 
   return (
-    <div className={`${orientation === 'horizontal' ? 'w-full' : 'h-full'} ${color} ${className}`} style={style} />
+    <div
+      className={`${orientation === 'horizontal' ? 'w-full' : 'h-full'} bg-black ${color} ${className}`}
+      style={style}
+    />
   );
 };
 

@@ -17,7 +17,7 @@ const Section: React.FC<SectionProps> = ({
   return (
     <section
       className={cn(
-        'flex justify-center items-center w-full',
+        'flex w-full items-center justify-center',
         padding,
         className,
         background

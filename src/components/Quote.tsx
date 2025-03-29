@@ -14,7 +14,7 @@ const Quote = ({
       <div className={`border-8 border-[#EB2F5B] ${className}`}>
         <div className="flex-colp-4 relative flex bg-[#111111] p-8">
           <Typography
-            className="whitespace-pre text-lg uppercase leading-[3] md:text-3xl lg:text-base"
+            className="text-lg uppercase leading-[3] md:text-3xl lg:text-base"
             variant="h1"
             fontFamily="ArialBlack"
             color="text-white"
@@ -32,7 +32,7 @@ const Quote = ({
       className={`relative flex flex-col border-8 border-[#EB2F5B] p-4 ${className}`}
     >
       <Typography
-        className="whitespace-pre whitespace-pre-line text-lg uppercase leading-[3] md:text-3xl lg:text-base"
+        className="text-lg uppercase leading-[3] md:text-3xl lg:text-base"
         variant="h1"
         fontFamily="ArialBlack"
         color="text-[#332f2f]"

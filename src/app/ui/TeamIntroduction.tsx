@@ -17,9 +17,9 @@ export default function TeamIntroduction() {
         <div className="grid grid-cols-1">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-[3fr,2fr,2fr]">
             <div className="flex flex-col">
-              <div className="flex flex-col mb-12 md:py-12 lg:py-0 lg:mb-0">
+              <div className="mb-12 flex flex-col md:py-12 lg:mb-0 lg:py-0">
                 <Typography
-                  className="text-sm mx-auto mb-6 md:mb-8 md:text-2xl lg:text-base xl:mb-4"
+                  className="mx-auto mb-6 text-sm md:mb-8 md:text-2xl lg:mb-4 lg:text-base"
                   color="text-[#eb2f5b]"
                   variant="p"
                   fontFamily="VarelaRound"
@@ -27,32 +27,25 @@ export default function TeamIntroduction() {
                   С ВАМИ БУДУТ РАБОТАТЬ
                 </Typography>
                 <Typography
-                  className="mx-auto text-center mb-12 text-black md:text-3xl xl:mb-8"
+                  className="mx-auto mb-12 text-center text-black md:text-3xl lg:mb-4 lg:text-3xl"
                   color="text-[#eb2f5b]"
                   variant="h1"
                   fontFamily="womby"
                 >
-                  СТУДИЯ ШТУКА.
-                  <br />
-                  <Underline className="leading-[1.18]">
-                    ДИЗАЙН ИНТЕРЬЕРА В УФЕ
-                  </Underline>
-                  <br />
-                  <Underline className="leading-[1.18]">
-                    ОТ АРХИТЕКТОРА И ДИЗАЙНЕРА
-                  </Underline>
+                  СТУДИЯ ШТУКА. ДИЗАЙН ИНТЕРЬЕРА В УФЕ ОТ АРХИТЕКТОРА И
+                  ДИЗАЙНЕРА
                 </Typography>
                 <Button className="md:hidden">РАССЧИТАТЬ ПРОЕКТ</Button>
                 <Button
                   size="lg"
-                  className="hidden md:block text-nowrap lg:mb-8 xl:mb-4"
+                  className="hidden text-nowrap md:block lg:mb-8 xl:mb-4"
                 >
                   РАССЧИТАТЬ ПРОЕКТ
                 </Button>
               </div>
-              <div className="mb-12 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-12">
+              <div className="mb-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-12">
                 <Owner
-                  title={`ЮЛИЯ ЯКОВЛЕВА.\nАРХИТЕКТОР`}
+                  title={`ЮЛИЯ ЯКОВЛЕВА. АРХИТЕКТОР`}
                   src={'/images/avatar/yakovleva.jpg'}
                   items={[
                     'Призовое место в конкурсе от 1 ТРЕСТ и ВДНХ на дизайн-проект интерьера квартиры',
@@ -60,7 +53,7 @@ export default function TeamIntroduction() {
                   ]}
                 />
                 <Owner
-                  title={`ИВАН ЖИГУЛЁВ.\nДИЗАЙНЕР`}
+                  title={`ИВАН ЖИГУЛЁВ. ДИЗАЙНЕР`}
                   src={'/images/avatar/zhiguliov.jpg'}
                   items={[
                     'Реализованы интерьеры домов premium класса, площадью более 500 м2.',
@@ -69,7 +62,7 @@ export default function TeamIntroduction() {
                 />
               </div>
             </div>
-            <div className="flex flex-col w-full aspect-[4/5] relative sm:aspect-[2/1] md:aspect-auto">
+            <div className="relative flex aspect-[4/5] w-full flex-col sm:aspect-[2/1] md:aspect-auto">
               <Image
                 src={'/images/custom/clinik.jpg'}
                 alt="Avatar"
@@ -77,7 +70,7 @@ export default function TeamIntroduction() {
                 className="object-cover object-[50%_20%]"
               />
             </div>
-            <div className="flex flex-col gap-8 xl:gap-0">
+            <div className="flex flex-col justify-center gap-8 xl:gap-0">
               <Info
                 className="xl:py-4"
                 icon={faHouse}
@@ -97,13 +90,13 @@ export default function TeamIntroduction() {
                 />
                 <Avatar
                   className="hidden md:flex"
-                  size="md"
+                  size="sm"
                   hasBorder={false}
                   src="https://1shtuka.ru/wordpress/wp-content/uploads/2021/03/7.jpg"
                 />
                 <div className="flex flex-col">
                   <Typography
-                    className="md:text-2xl lg:text-sm"
+                    className="md:text-2xl lg:text-xs"
                     variant="p"
                     color="text-black"
                     fontFamily="womby"
@@ -111,7 +104,7 @@ export default function TeamIntroduction() {
                     ГУЛЬНАРА А.
                   </Typography>
                   <Typography
-                    className="md:text-2xl lg:text-sm"
+                    className="md:text-2xl lg:text-xs"
                     variant="p"
                     color="text-[#0A0A0A]"
                     fontFamily="womby"

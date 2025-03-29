@@ -6,7 +6,7 @@ export default function Contacts() {
   return (
     <Section background="bg-[#1C1C1C]">
       <Container>
-        <div className="flex flex-col flex-1 text-center gap-4">
+        <div className="flex flex-1 flex-col gap-4 text-center">
           <Typography
             className="font-light md:text-xl"
             variant="p"
@@ -37,7 +37,7 @@ export default function Contacts() {
             fontFamily="Metal"
             color="text-white"
           >
-            г. Уфа, ВДНХ-ДОМ
+            г. Уфа, ул. Менделеева 158
           </Typography>
         </div>
       </Container>

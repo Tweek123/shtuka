@@ -27,17 +27,19 @@ export default function TeamIntroduction() {
                   С ВАМИ БУДУТ РАБОТАТЬ
                 </Typography>
                 <Typography
-                  className="mx-auto mb-12 text-center text-black md:text-3xl lg:mb-4 lg:text-3xl"
+                  className="mx-auto mb-12 text-center text-black md:text-3xl lg:mb-4 lg:text-xl"
                   color="text-[#eb2f5b]"
                   variant="h1"
-                  fontFamily="womby"
+                  fontFamily="ArialBlack"
                 >
-                  СТУДИЯ ШТУКА. ДИЗАЙН ИНТЕРЬЕРА В УФЕ ОТ АРХИТЕКТОРА И
-                  ДИЗАЙНЕРА
+                  <Underline className="leading-[1.18]">
+                    СТУДИЯ ШТУКА. ДИЗАЙН ИНТЕРЬЕРА В УФЕ ОТ АРХИТЕКТОРА И
+                    ДИЗАЙНЕРА
+                  </Underline>
                 </Typography>
                 <Button className="md:hidden">РАССЧИТАТЬ ПРОЕКТ</Button>
                 <Button
-                  size="lg"
+                  size="md"
                   className="hidden text-nowrap md:block lg:mb-8 xl:mb-4"
                 >
                   РАССЧИТАТЬ ПРОЕКТ
@@ -48,8 +50,8 @@ export default function TeamIntroduction() {
                   title={`ЮЛИЯ ЯКОВЛЕВА. АРХИТЕКТОР`}
                   src={'/images/avatar/yakovleva.jpg'}
                   items={[
-                    'Призовое место в конкурсе от 1 ТРЕСТ и ВДНХ на дизайн-проект интерьера квартиры',
-                    '15-летний опыт в дизайне интерьеров и высшее архитектурное образование',
+                    'Призовое место в конкурсе от 1 ТРЕСТ и ВДНХ на дизайн-проект квартиры',
+                    '15 лет опыта в дизайне интерьеров и высшее архитектурное образование',
                   ]}
                 />
                 <Owner
@@ -99,7 +101,7 @@ export default function TeamIntroduction() {
                     className="md:text-2xl lg:text-xs"
                     variant="p"
                     color="text-black"
-                    fontFamily="womby"
+                    fontFamily="helveticaNeue"
                   >
                     ГУЛЬНАРА А.
                   </Typography>
@@ -107,7 +109,7 @@ export default function TeamIntroduction() {
                     className="md:text-2xl lg:text-xs"
                     variant="p"
                     color="text-[#0A0A0A]"
-                    fontFamily="womby"
+                    fontFamily="helveticaNeue"
                   >
                     ОТЗЫВ НА ДИЗАЙН КЛИНИКИ RESTETICA
                   </Typography>

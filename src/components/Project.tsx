@@ -14,7 +14,7 @@ const Project = ({
 }) => {
   return (
     <div
-      className={`group relative flex aspect-[2/1] flex-1 flex-col ${className}`}
+      className={`group relative flex aspect-[2/1] flex-1 flex-col overflow-hidden ${className}`}
     >
       <Image
         className="absolute"
@@ -23,7 +23,8 @@ const Project = ({
         layout="fill"
         objectFit="cover"
       />
-      <div className="absolute bottom-0 left-0 m-4 mr-auto flex max-w-60 flex-col border-4 border-[#EB2F5B] p-4 group-hover:flex sm:max-w-[400px] md:mx-2">
+      <div className="absolute flex h-full w-full flex-col bg-black bg-opacity-0 transition duration-500 group-hover:bg-opacity-50"></div>
+      <div className="absolute -bottom-full left-0 m-4 mr-auto flex max-w-60 flex-col border-4 border-[#EB2F5B] p-4 transition-all duration-500 group-hover:bottom-0 group-hover:flex sm:max-w-[400px] md:mx-2">
         <Typography
           className="lg:text-sn mb-4 text-sm sm:text-lg md:text-xs"
           fontFamily="VarelaRound"

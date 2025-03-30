@@ -8,16 +8,17 @@ import 'swiper/css/navigation';
 type SliderProps = {
   children: React.ReactNode;
   className?: string;
+  params?: any;
 };
 
-const Slider = ({ children, className }: SliderProps) => {
+const Slider = ({ params = {}, children, className }: SliderProps) => {
   const childrenArray = React.Children.toArray(children);
   const swiperRef = useRef<any>(null);
 
   return (
-    <div className={`w-full relative ${className}`}>
+    <div className={`relative w-full ${className}`}>
       <button
-        className="custom-prev !z-50 absolute"
+        className="custom-prev absolute !z-50"
         onClick={() => {
           swiperRef.current?.slidePrev();
         }}
@@ -34,13 +35,14 @@ const Slider = ({ children, className }: SliderProps) => {
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
+        {...params}
       >
         {childrenArray.map((child, index) => (
           <SwiperSlide key={index}>{child}</SwiperSlide>
         ))}
       </Swiper>
       <button
-        className="custom-next !z-50 absolute"
+        className="custom-next absolute !z-50"
         onClick={() => swiperRef.current?.slideNext()}
       >
         →

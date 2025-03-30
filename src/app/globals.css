@@ -15,20 +15,6 @@
   --bg-gradient-end: #e31e54;
 }
 
-@font-face {
-  font-family: 'Bubblegum';
-  src: url('/fonts/Quicksand-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Bubblegum';
-  src: url('/fonts/Quicksand-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 *,
 *::before,
 *::after {
@@ -46,6 +32,48 @@ html {
   }
 }
 
+@layer base {
+  @font-face {
+    font-family: 'Womby';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/wombyrusbydaymarius.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'VarelaRound';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/proximanova_regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'CourierNew';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/CourierNew.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'ArialBlack';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/ArialBlack.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/HelveticaNeueLight.otf') format('opentype');
+  }
+}
+
 body {
   color: var(--text-dark);
   background: linear-gradient(
@@ -53,7 +81,6 @@ body {
     var(--bubblegum-pink) 0%,
     var(--candy-purple) 100%
   );
-  font-family: 'Bubblegum', sans-serif;
   min-height: 100vh;
 }
 

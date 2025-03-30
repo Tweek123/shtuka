@@ -9,12 +9,12 @@ export default function WhyChooseUs() {
   return (
     <Section className="px-0">
       <Container className="lg:!pb-0">
-        <div className="flex flex-col">
+        <div className="flex flex-grow flex-col">
           <Typography
             variant="h1"
             className="mb-8 text-center font-extrabold leading-[1.5] md:text-3xl"
             color="text-black"
-            fontFamily="womby"
+            fontFamily="ArialBlack"
           >
             <Underline className="leading-[1.18]">
               ПОЧЕМУ НУЖНО ЗАКАЗАТЬ ПРОЕКТ У НАС?

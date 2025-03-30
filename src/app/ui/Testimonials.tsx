@@ -7,11 +7,19 @@ import Divider from '@/components/Divider';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
 
+const desktopSlides = [
+  '/images/examples/desktop/slider/1.jpg',
+  '/images/examples/desktop/slider/2.jpg',
+  '/images/examples/desktop/slider/3.jpg',
+  '/images/examples/desktop/slider/4.jpg',
+  '/images/examples/desktop/slider/5.jpg',
+];
+
 export default function Testimonials() {
   return (
     <Section className="!px-0">
       <Container className="!py-0 lg:-mt-16">
-        <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-[69.7%,31.3%] lg:gap-0">
+        <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-[69.8%,31.2%] lg:gap-0">
           <Info
             className="lg:order-2 lg:py-0 lg:text-center"
             icon={faPaintRoller}
@@ -21,7 +29,7 @@ export default function Testimonials() {
             }
           />
 
-          <div className="flex flex-col">
+          <div className="z-40 flex flex-col shadow-[0_0_0.4rem_0_rgba(0,0,0,0.3)]">
             <Slider className="min-h-screen w-full md:hidden">
               <div className="relative min-h-screen w-full">
                 <Image
@@ -210,18 +218,20 @@ export default function Testimonials() {
             </Slider>
 
             <Slider className="hidden aspect-video w-full md:block lg:order-1 xl:aspect-auto">
-              <div className="relative aspect-[1800/600] w-full">
-                <div className="flex h-full flex-row gap-8">
-                  <div className="relative w-full">
-                    <Image
-                      src={'/images/examples/slider/1.jpg'}
-                      alt="Example 1"
-                      fill
-                      className="object-cover object-center"
-                    />
+              {desktopSlides.map((src) => (
+                <div className="relative aspect-[1800/600] w-full">
+                  <div className="flex h-full flex-row gap-8">
+                    <div className="relative w-full">
+                      <Image
+                        src={src}
+                        alt="Example 1"
+                        fill
+                        className="object-cover object-center"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </Slider>
           </div>
         </div>

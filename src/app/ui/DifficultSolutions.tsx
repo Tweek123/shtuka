@@ -13,7 +13,7 @@ export default function DifficultSolutions() {
             variant="h1"
             className="mb-8 text-center font-extrabold leading-[1.5] md:text-3xl"
             color="text-black"
-            fontFamily="womby"
+            fontFamily="ArialBlack"
           >
             <Underline className="leading-[1.18]">
               СЛОЖНЫЕ РЕАЛИЗОВАННЫЕ РЕШЕНИЯ РЕШЕНИЯ НА НАШИХ ОБЪЕКТАХ:

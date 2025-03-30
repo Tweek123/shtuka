@@ -27,7 +27,7 @@ const Info = ({
       {typeof text === 'string' ? (
         <Typography
           className="lg:text-3x mb-4 font-normal text-[#111] hover:text-[#ce528e] md:text-3xl lg:mb-4 lg:text-2xl"
-          fontFamily="womby"
+          fontFamily="helveticaNeue"
           variant="h1"
         >
           {text}
@@ -38,7 +38,7 @@ const Info = ({
       {typeof subtext === 'string' ? (
         <Typography
           className="text-base font-light text-black group-hover:text-[#ce528e] md:text-xl lg:text-xs"
-          fontFamily="womby"
+          fontFamily="helveticaNeue"
           variant="p"
         >
           {subtext}

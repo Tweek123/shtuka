@@ -14,7 +14,8 @@ interface TypographyProps {
     | 'Metal'
     | 'VarelaRound'
     | 'CourierNew'
-    | 'ArialBlack';
+    | 'ArialBlack'
+    | 'helveticaNeue';
 }
 
 const variantMapping = {
@@ -54,6 +55,7 @@ const Typography: React.FC<TypographyProps> = ({
           'font-VarelaRound': fontFamily === 'VarelaRound',
           'font-CourierNew': fontFamily === 'CourierNew',
           'font-ArialBlack': fontFamily === 'ArialBlack',
+          'font-helveticaNeue': fontFamily === 'helveticaNeue',
         },
         background,
         className

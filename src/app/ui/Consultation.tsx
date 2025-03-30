@@ -24,7 +24,7 @@ export default function Consultation() {
               className="mb-8 md:text-3xl"
               variant="h1"
               color="text-black"
-              fontFamily="womby"
+              fontFamily="ArialBlack"
             >
               ХОТИТЕ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ ДИЗАЙНЕРА{' '}
               <Underline className="leading-[1.18]" gradient="to-[#eb2f5b]">
@@ -42,7 +42,7 @@ export default function Consultation() {
               интерьера.
             </Typography>
           </div>
-          <div className="relative mx-auto flex w-full max-w-[480px] flex-col overflow-hidden rounded-[4rem] bg-white px-4 py-12 lg:my-auto">
+          <div className="relative mx-auto flex w-full max-w-[480px] flex-col overflow-hidden rounded-[4rem] bg-white px-4 py-12 lg:my-auto lg:max-w-none">
             <FontAwesomeIcon
               height={64}
               width={64}

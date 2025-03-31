@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Typography from './Typography';
-
+import Image from 'next/image'
 const projects = [
   {
     id: 1,
@@ -90,11 +90,14 @@ export default function Gallery() {
               className="relative overflow-hidden"
             >
               <div className="group relative">
-                <img
+                <div className="flex flex-col grayscale transition-all duration-300 hover:grayscale-0 md:aspect-[1.5/1]">
+                <Image
                   src={project.image}
                   alt={project.title}
-                  className="aspect-[1.5/1] w-full object-cover grayscale transition-all duration-300 hover:grayscale-0 md:aspect-[1.5/1]"
+                  className="aspect-[1.5/1] w-full object-cover "
+                  fill
                 />
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 translate-y-full transform bg-[#eb2f5b] p-4 text-white transition-transform duration-300 group-hover:translate-y-0">
                   <h3 className="text-lg font-bold md:text-3xl">
                     {project.title}

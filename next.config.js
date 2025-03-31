@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  assetPrefix: '/shtuka/',
-  basePath: '/shtuka/',
+  assetPrefix:  '/shtuka/',
+  basePath: '/shtuka',
   images: {
     domains: ['1shtuka.ru'],
     formats: ['image/avif', 'image/webp'],
@@ -14,10 +14,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
-  },
-  experimental: {
-    optimizeCss: true,
+    ignoreBuildErrors: true, // If you also want to skip TypeScript errors
   },
 };
 

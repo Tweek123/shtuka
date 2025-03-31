@@ -10,7 +10,7 @@ import { Home } from 'react-feather';
 import { House } from '@/components/Icons';
 
 const desktopSlides = [
-  '/shtuka/images/examples/desktop/slider/1.jpg',
+  '/shtuka/images/examples/desktop/slider/1.webp',
   '/shtuka/images/examples/desktop/slider/2.jpg',
   '/shtuka/images/examples/desktop/slider/3.jpg',
   '/shtuka/images/examples/desktop/slider/4.jpg',

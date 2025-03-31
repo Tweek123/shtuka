@@ -18,12 +18,6 @@ const nextConfig = {
   },
   experimental: {
     optimizeCss: true,
-    fontLoaders: [
-      { loader: '@next/font/google', options: { subsets: ['latin'] } }
-    ],
-  },
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
   },
 };
 

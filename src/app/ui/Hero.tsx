@@ -15,13 +15,13 @@ const Hero = () => {
             <Slider className="absolute h-full w-full">
               <div className="relative min-h-screen w-full md:aspect-[1600/640] md:min-h-[inherit]">
                 <Image
-                  src={'/images/hero/1.jpg'}
+                  src={'/shtuka/images/hero/1.jpg'}
                   alt="Hero 1"
                   fill
                   className="object-cover object-center md:hidden"
                 />
                 <Image
-                  src={'/images/hero/desktop-1.jpg'}
+                  src={'/shtuka/images/hero/desktop-1.jpg'}
                   alt="Hero 1"
                   fill
                   className="hidden object-cover object-center md:block"
@@ -29,13 +29,13 @@ const Hero = () => {
               </div>
               <div className="relative min-h-screen w-full md:aspect-[1600/640] md:min-h-[inherit]">
                 <Image
-                  src={'/images/hero/2.jpg'}
+                  src={'/shtuka/images/hero/2.jpg'}
                   alt="Hero 2"
                   fill
                   className="object-cover object-center md:hidden"
                 />
                 <Image
-                  src={'/images/hero/desktop-2.jpg'}
+                  src={'/shtuka/images/hero/desktop-2.jpg'}
                   alt="Hero 2"
                   fill
                   className="hidden object-cover object-center md:block"
@@ -43,13 +43,13 @@ const Hero = () => {
               </div>
               <div className="relative min-h-screen w-full md:aspect-[1600/640] md:min-h-[inherit]">
                 <Image
-                  src={'/images/hero/3.jpg'}
+                  src={'/shtuka/images/hero/3.jpg'}
                   alt="Hero 3"
                   fill
                   className="object-cover object-center md:hidden"
                 />
                 <Image
-                  src={'/images/hero/desktop-3.jpg'}
+                  src={'/shtuka/images/hero/desktop-3.jpg'}
                   alt="Hero 3"
                   fill
                   className="hidden object-cover object-center md:block"

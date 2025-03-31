@@ -12,13 +12,13 @@ export default function VideoRestetica() {
         <div className="relative z-20 flex w-full flex-col pb-8 md:px-16 md:pb-12">
           <div className="absolute left-0 top-0 z-10 h-full w-full">
             <Image
-              src={'/images/custom/cosmetology.jpg'}
+              src={'/shtuka/images/custom/cosmetology.jpg'}
               alt="Hero 2"
               fill
               className="object-cover object-center md:hidden"
             />
             <Image
-              src={'/images/custom/desktop-clinik.jpg'}
+              src={'/shtuka/images/custom/desktop-clinik.jpg'}
               alt="Hero 2"
               fill
               className="hidden object-cover object-[70%_50%] md:block md:object-center"

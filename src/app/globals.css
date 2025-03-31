@@ -36,7 +36,7 @@ html {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/fonts/wombyrusbydaymarius.ttf') format('truetype');
+    src: url('/shtuka/fonts/wombyrusbydaymarius.ttf') format('truetype');
   }
 
   @font-face {
@@ -44,7 +44,7 @@ html {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/fonts/proximanova_regular.ttf') format('truetype');
+    src: url('/shtuka/fonts/proximanova_regular.ttf') format('truetype');
   }
 
   @font-face {
@@ -52,7 +52,7 @@ html {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/fonts/CourierNew.ttf') format('truetype');
+    src: url('/shtuka/fonts/CourierNew.ttf') format('truetype');
   }
 
   @font-face {
@@ -60,7 +60,7 @@ html {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/fonts/ArialBlack.ttf') format('truetype');
+    src: url('/shtuka/fonts/ArialBlack.ttf') format('truetype');
   }
 
   @font-face {
@@ -68,7 +68,7 @@ html {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('/fonts/HelveticaNeueLight.otf') format('opentype');
+    src: url('/shtuka/fonts/HelveticaNeueLight.otf') format('opentype');
   }
 
   @font-face {

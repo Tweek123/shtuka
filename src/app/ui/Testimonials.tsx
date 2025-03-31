@@ -10,11 +10,11 @@ import { Home } from 'react-feather';
 import { House } from '@/components/Icons';
 
 const desktopSlides = [
-  '/images/examples/desktop/slider/1.jpg',
-  '/images/examples/desktop/slider/2.jpg',
-  '/images/examples/desktop/slider/3.jpg',
-  '/images/examples/desktop/slider/4.jpg',
-  '/images/examples/desktop/slider/5.jpg',
+  '/shtuka/images/examples/desktop/slider/1.jpg',
+  '/shtuka/images/examples/desktop/slider/2.jpg',
+  '/shtuka/images/examples/desktop/slider/3.jpg',
+  '/shtuka/images/examples/desktop/slider/4.jpg',
+  '/shtuka/images/examples/desktop/slider/5.jpg',
 ];
 
 export default function Testimonials() {
@@ -35,7 +35,7 @@ export default function Testimonials() {
             <Slider className="min-h-screen w-full md:hidden">
               <div className="relative aspect-[800/1100] w-full">
                 <Image
-                  src={'/images/examples/16.jpg'}
+                  src={'/shtuka/images/examples/16.jpg'}
                   alt="Example 1"
                   fill
                   className="object-cover object-center"
@@ -72,7 +72,7 @@ export default function Testimonials() {
               </div>
               <div className="relative aspect-[800/1100] w-full">
                 <Image
-                  src={'/images/examples/17.jpg'}
+                  src={'/shtuka/images/examples/17.jpg'}
                   alt="Example 2"
                   fill
                   className="object-cover object-center"
@@ -109,7 +109,7 @@ export default function Testimonials() {
               </div>
               <div className="relative aspect-[800/1100] w-full">
                 <Image
-                  src={'/images/examples/19.jpg'}
+                  src={'/shtuka/images/examples/19.jpg'}
                   alt="Example 3"
                   fill
                   className="object-cover object-center"
@@ -146,7 +146,7 @@ export default function Testimonials() {
               </div>
               <div className="relative aspect-[800/1100] w-full">
                 <Image
-                  src={'/images/examples/18.jpg'}
+                  src={'/shtuka/images/examples/18.jpg'}
                   alt="Example 4"
                   fill
                   className="object-cover object-center"
@@ -183,7 +183,7 @@ export default function Testimonials() {
               </div>
               <div className="relative aspect-[800/1100] w-full">
                 <Image
-                  src={'/images/examples/20.jpg'}
+                  src={'/shtuka/images/examples/20.jpg'}
                   alt="Example 5"
                   fill
                   className="object-cover object-center"

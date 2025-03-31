@@ -49,7 +49,7 @@ export default function TeamIntroduction() {
               <div className="mb-12 grid grid-cols-1 gap-4 px-8 md:grid-cols-2 md:gap-12 md:px-0">
                 <Owner
                   title={`ЮЛИЯ ЯКОВЛЕВА. АРХИТЕКТОР`}
-                  src={'/images/avatar/yakovleva.jpg'}
+                  src={'/shtuka/images/avatar/yakovleva.jpg'}
                   items={[
                     'Призовое место в конкурсе от 1 ТРЕСТ и ВДНХ на дизайн-проект квартиры',
                     '15 лет опыта в дизайне интерьеров и высшее архитектурное образование',
@@ -57,7 +57,7 @@ export default function TeamIntroduction() {
                 />
                 <Owner
                   title={`ИВАН ЖИГУЛЁВ. ДИЗАЙНЕР`}
-                  src={'/images/avatar/zhiguliov.jpg'}
+                  src={'/shtuka/images/avatar/zhiguliov.jpg'}
                   items={[
                     'Реализованы интерьеры домов premium класса, площадью более 500 м2.',
                     'Так же интерьеры клиник, детских садов, HoReCa объектов и др.',
@@ -67,7 +67,7 @@ export default function TeamIntroduction() {
             </div>
             <div className="relative flex aspect-[4/5] w-full flex-col md:aspect-auto">
               <Image
-                src={'/images/custom/clinik.jpg'}
+                src={'/shtuka/images/custom/clinik.jpg'}
                 alt="Avatar"
                 fill
                 className="object-cover object-[50%_20%]"

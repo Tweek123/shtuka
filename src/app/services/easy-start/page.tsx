@@ -19,7 +19,7 @@ export default function Services() {
         'Адаптивный дизайн',
         'Оптимизация конверсии',
       ],
-      image: '/images/web-design.jpg',
+      image: '/shtuka/images/web-design.jpg',
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default function Services() {
         'Маркетинговые материалы',
         'Гайдлайны бренда',
       ],
-      image: '/images/branding.jpg',
+      image: '/shtuka/images/branding.jpg',
     },
     {
       id: 3,
@@ -47,7 +47,7 @@ export default function Services() {
         'Пользовательские исследования',
         'Тестирование юзабилити',
       ],
-      image: '/images/ui-ux.jpg',
+      image: '/shtuka/images/ui-ux.jpg',
     },
   ];
 
@@ -161,7 +161,11 @@ export default function Services() {
             </div>
             <div className="flex flex-col gap-8 md:justify-center">
               <div className="relative -mx-4 flex aspect-video flex-col md:mx-0">
-                <Image src="/images/services/easy/plan.jpg" alt="plan" fill />
+                <Image
+                  src="/shtuka/images/services/easy/plan.jpg"
+                  alt="plan"
+                  fill
+                />
               </div>
             </div>
           </div>
@@ -172,7 +176,11 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 lg:grid-cols-[4fr,5fr]">
             <div className="flex flex-grow flex-col">
               <div className="relative -mx-4 -my-8 flex aspect-[1/2] flex-grow flex-col md:m-auto md:max-w-xs lg:max-w-lg">
-                <Image src="/images/services/easy/plan-2.jpg" alt="plan" fill />
+                <Image
+                  src="/shtuka/images/services/easy/plan-2.jpg"
+                  alt="plan"
+                  fill
+                />
               </div>
             </div>
             <div className="flex flex-col">

@@ -116,7 +116,7 @@ export default function Services() {
             </div>
             <div className="relative aspect-square md:aspect-auto md:[grid-area:col-2]">
               <Image
-                src="/images/services/comfort/bathroom.jpg"
+                src="/shtuka/images/services/comfort/bathroom.jpg"
                 alt="plan"
                 fill
               />
@@ -158,7 +158,7 @@ export default function Services() {
           <div className="-my-8 grid grow grid-cols-1 md:-mx-16 md:-my-16 md:grid-cols-2 lg:-my-16 lg:grid-cols-3">
             <div className="relative -mx-4 flex aspect-square flex-grow flex-col md:mx-0 md:aspect-auto">
               <Image
-                src="/images/services/comfort/livingroom.jpg"
+                src="/shtuka/images/services/comfort/livingroom.jpg"
                 alt="plan"
                 fill
               />
@@ -175,13 +175,13 @@ export default function Services() {
                   className="md:hidden"
                   size="sm"
                   hasBorder={false}
-                  src="/images/services/comfort/zhigulev.jpg"
+                  src="/shtuka/images/services/comfort/zhigulev.jpg"
                 />
                 <Avatar
                   className="hidden md:flex"
                   size="md"
                   hasBorder={false}
-                  src="/images/services/comfort/zhigulev.jpg"
+                  src="/shtuka/images/services/comfort/zhigulev.jpg"
                 />
                 <div className="flex flex-col">
                   <Typography
@@ -207,7 +207,7 @@ export default function Services() {
             </div>
             <div className="relative -mx-4 flex aspect-square flex-grow flex-col md:mx-0 md:aspect-auto">
               <Image
-                src="/images/services/comfort/pink-bathroom.jpg"
+                src="/shtuka/images/services/comfort/pink-bathroom.jpg"
                 alt="plan"
                 fill
               />

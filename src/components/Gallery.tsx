@@ -8,37 +8,37 @@ const projects = [
     id: 1,
     title: 'клиника RESTETICA',
     category: 'Коммерческие объекты',
-    image: '/images/portfolio/1.jpg',
+    image: '/shtuka/images/portfolio/1.jpg',
   },
   {
     id: 2,
     title: 'Дом. Санкт-Петербург',
     category: 'Дома',
-    image: '/images/portfolio/2.jpg',
+    image: '/shtuka/images/portfolio/2.jpg',
   },
   {
     id: 3,
     title: 'Коттедж',
     category: 'Дома',
-    image: '/images/portfolio/3.jpg',
+    image: '/shtuka/images/portfolio/3.jpg',
   },
   {
     id: 4,
     title: 'Квартира в Москве',
     category: 'Квартиры',
-    image: '/images/portfolio/4.jpg',
+    image: '/shtuka/images/portfolio/4.jpg',
   },
   {
     id: 5,
     title: 'Дом 500 м2',
     category: 'Дома',
-    image: '/images/portfolio/5.jpg',
+    image: '/shtuka/images/portfolio/5.jpg',
   },
   {
     id: 6,
     title: 'ЖК ТРИЛОГИЯ',
     category: 'Квартиры',
-    image: '/images/portfolio/6.jpg',
+    image: '/shtuka/images/portfolio/6.jpg',
   },
 ];
 

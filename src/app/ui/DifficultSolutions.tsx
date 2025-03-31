@@ -22,7 +22,7 @@ export default function DifficultSolutions() {
           <div className="-mx-4 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-2 xl:grid-cols-4">
             <Project
               className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
-              src="/images/projects/1.jpg"
+              src="/shtuka/images/projects/1.jpg"
               text={'ХОЛЛ ЧАСТНОГО ДОМА'}
               subtext={
                 'РОСПИСЬ СТЕН ХУДОЖНИКОМ, ИНДИВИДУАЛЬНЫЙ ДИЗАЙН НАПОЛЬНОЙ ПЛИТКИ'
@@ -30,7 +30,7 @@ export default function DifficultSolutions() {
             />
             <Project
               className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
-              src="/images/projects/2.jpg"
+              src="/shtuka/images/projects/2.jpg"
               text={'ВАННАЯ КОМНАТА С ЗИМНИМ САДОМ'}
               subtext={
                 'ИНДИВИДУАЛЬНЫЙ ДИЗАЙН ПАННО НА СТЕНЕ, ЗИМНИЙ САД ЗА СТЕКЛОМ'
@@ -38,25 +38,25 @@ export default function DifficultSolutions() {
             />
             <Project
               className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
-              src="/images/projects/3.jpg"
+              src="/shtuka/images/projects/3.jpg"
               text={'БАССЕЙН В КОТТЕДЖЕ'}
               subtext={'СКРУГЛЕННЫЕ СТЕНЫ, ИМИТАЦИЯ СЛЭБОВ КОЛОТОГО КАМНЯ'}
             />
             <Project
               className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
-              src="/images/projects/4.jpg"
+              src="/shtuka/images/projects/4.jpg"
               text={'БАННЫЙ КОМПЛЕКС В КОТТЕДЖЕ'}
               subtext={'БАЛКИ НА ПОТОЛКЕ, НАСТЕННОЕ ПАННО С РАСТЕНИЯМИ'}
             />
             <Project
               className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
-              src="/images/projects/5.jpg"
+              src="/shtuka/images/projects/5.jpg"
               text={'ВАННАЯ КОМНАТА ЧАСТНОГО ДОМА'}
               subtext={'УНИКАЛЬНАЯ АВТОРСКАЯ МОЗАИКА'}
             />
             <Project
               className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
-              src="/images/projects/6.jpg"
+              src="/shtuka/images/projects/6.jpg"
               text={'ВАННАЯ КОМНАТА С ЗИМНИМ САДОМ'}
               subtext={
                 'СКАЛА НА СТЕНЕ, МЕБЕЛЬ С ПАННО ИЗ РАСТЕНИЙ, ПАНЕЛИ-РЕЙКИ СО СВЕТОВЫМИ ВСТАВКАМИ'
@@ -64,13 +64,13 @@ export default function DifficultSolutions() {
             />
             <Project
               className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
-              src="/images/projects/7.jpg"
+              src="/shtuka/images/projects/7.jpg"
               text={'КОСМЕТОЛОГИЯ'}
               subtext={'СКРУГЛЕННЫЕ РИФЛЕНЫЕ СТЕНЫ, ВСТРОЕННАЯ МЕБЕЛЬ'}
             />
             <Project
               className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
-              src="/images/projects/8.jpg"
+              src="/shtuka/images/projects/8.jpg"
               text={'КУХНЯ В КОТТЕДЖЕ'}
               subtext={'ШПОНИРОВАННЫЕ ПОТОЛКИ, ВСТРОЕННАЯ МЕБЕЛЬ'}
             />

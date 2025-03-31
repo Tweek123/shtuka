@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 flex flex-row items-center justify-between gap-8 bg-white px-12 py-4 md:justify-normal md:px-16 md:py-1">
       <div className="relative flex aspect-[167/34] w-28 cursor-pointer md:w-16">
-        <Image src="/images/logo.png" alt="logo" layout="fill" />
+        <Image src="/shtuka/images/logo.png" alt="logo" layout="fill" />
       </div>
       <nav className="ml-a hidden md:flex md:flex-row">
         <ul className="gap-8 md:flex">
@@ -72,7 +72,7 @@ const Header = () => {
           <ul className="fixed left-0 top-0 z-50 h-full w-1/2 min-w-[300px] space-y-3 overflow-auto bg-white p-6 shadow-md md:ml-14 md:flex md:gap-x-5">
             <li className="mb-6 block px-3">
               <div className="relative flex aspect-[167/34] w-32 flex-row">
-                <Image src="/images/logo.png" alt="logo" layout="fill" />
+                <Image src="/shtuka/images/logo.png" alt="logo" layout="fill" />
               </div>
             </li>
             <li className="border-b px-3 py-3">

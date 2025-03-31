@@ -9,7 +9,7 @@ import Underline from '@/components/Underline';
 
 const slidesDesktop = [
   {
-    src: '/images/notes/notes/1.jpg',
+    src: '/shtuka/images/notes/notes/1.jpg',
     comment:
       '“В квартире полностью закончен ремонт, поставлена мебель, было оказано полное сопровождение, от проекта до реализации.”',
     author: {
@@ -18,7 +18,7 @@ const slidesDesktop = [
     },
   },
   {
-    src: '/images/notes/notes/2.jpg',
+    src: '/shtuka/images/notes/notes/2.jpg',
     comment: '“Супер! Иван, ты – гений! Все очень нравится!”',
     author: {
       text: 'Гульшат.',
@@ -26,7 +26,7 @@ const slidesDesktop = [
     },
   },
   {
-    src: '/images/notes/notes/poll-1.jpg',
+    src: '/shtuka/images/notes/notes/poll-1.jpg',
     comment: '“БАССЕЙН ГОТОВ! РЕМОНТ ЗАКОНЧИЛИ”',
     author: {
       text: 'Рустам и Татьяна',
@@ -34,7 +34,7 @@ const slidesDesktop = [
     },
   },
   {
-    src: '/images/notes/notes/4.jpg',
+    src: '/shtuka/images/notes/notes/4.jpg',
     comment:
       '“Кто приходит, все в шоке! Зять сказал, что даже в самых крутых 5-звездочных отелях такого не видел! И это, конечно, благодаря вам!”',
     author: {
@@ -43,7 +43,7 @@ const slidesDesktop = [
     },
   },
   {
-    src: '/images/notes/notes/5.jpg',
+    src: '/shtuka/images/notes/notes/5.jpg',
     comment:
       '“Закончили ремонт и магазин открыли! Все получилось очень красиво, спасибо за работу! ”',
     author: {
@@ -52,7 +52,7 @@ const slidesDesktop = [
     },
   },
   {
-    src: '/images/notes/notes/6.jpg',
+    src: '/shtuka/images/notes/notes/6.jpg',
     comment:
       '“Спасибо, Иван, Барбершоп запустили, удалось реализовать все как по проекту.”',
     author: {
@@ -150,7 +150,7 @@ export default function Quotes() {
               <div className="flex h-full flex-col gap-8 md:flex-row">
                 <div className="relative aspect-[1746/1068] h-full">
                   <Image
-                    src={'/images/notes/appart-1.jpg'}
+                    src={'/shtuka/images/notes/appart-1.jpg'}
                     alt="Hero 1"
                     fill
                     className="object-cover object-center"
@@ -158,7 +158,7 @@ export default function Quotes() {
                 </div>
                 <div className="relative aspect-[2433/1081] w-full">
                   <Image
-                    src={'/images/notes/appart-2.jpg'}
+                    src={'/shtuka/images/notes/appart-2.jpg'}
                     alt="Hero 1"
                     fill
                     className="object-cover object-center"

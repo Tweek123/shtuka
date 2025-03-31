@@ -50,7 +50,6 @@ export default function VideoRestetica() {
                 </Underline>
               </Typography>
             </div>
-            {/* className="z-10 px-4 sm:-mx-4 sm:!aspect-[1.5/1] md:ml-4 md:w-4/6 md:px-0 lg:ml-0 lg:mr-auto lg:!aspect-[2/1] lg:w-[55%] lg:px-0" */}
             <Video
               className="z-10 !aspect-[1.5/1] px-4 md:ml-0 md:mr-auto md:!aspect-[2/1] md:w-[55%] md:p-0 md:px-0"
               src="https://rutube.ru/play/embed/76379aa05adc3e6d3b47fc7f58b44c84/"

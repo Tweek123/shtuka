@@ -55,7 +55,7 @@ export default function Services() {
     <main className="">
       <Section>
         <Container>
-          <div className="lg:-mx:16 -mx-4 flex min-h-screen flex-grow flex-col items-center justify-center bg-[#111] md:-mx-8">
+          <div className="lg:-mx:16 -mx-4 flex min-h-screen flex-grow flex-col items-center justify-center bg-[#111] md:-mx-16">
             <Typography
               className="text-center text-6xl font-normal uppercase text-white md:text-8xl lg:text-6xl"
               variant="h1"
@@ -70,14 +70,14 @@ export default function Services() {
           <div className="grid grid-cols-1 lg:grid-cols-[2fr,3fr] lg:gap-16">
             <div className="flex flex-col">
               <Typography
-                className="font-VarelaRound mb-6 text-sm font-light uppercase leading-relaxed text-[#eb2f5b] md:mb-8 md:text-2xl lg:text-base"
+                className="mb-6 font-VarelaRound text-sm font-light uppercase leading-relaxed text-[#eb2f5b] md:mb-8 md:text-2xl lg:text-base"
                 variant="h1"
               >
                 Проект “ЛЕГКИЙ СТАРТ”
               </Typography>
               <Typography
                 variant="h1"
-                className="text-primary font-womby mb-4 text-3xl font-normal uppercase leading-tight text-[#111] group-hover:text-white md:text-3xl lg:mb-2 lg:text-xl xl:mb-2"
+                className="text-primary mb-4 font-womby text-3xl font-normal uppercase leading-tight text-[#111] group-hover:text-white md:text-3xl lg:mb-2 lg:text-xl xl:mb-2"
               >
                 Проект для ремонта без ошибок
               </Typography>
@@ -131,7 +131,7 @@ export default function Services() {
             <div className="mb-8 flex flex-col">
               <Typography
                 variant="h1"
-                className="text-primary font-womby mb-4 text-3xl font-normal uppercase leading-tight text-[#111] group-hover:text-white md:text-3xl lg:mb-2 lg:text-xl xl:mb-2"
+                className="text-primary mb-4 font-womby text-3xl font-normal uppercase leading-tight text-[#111] group-hover:text-white md:text-3xl lg:mb-2 lg:text-xl xl:mb-2"
               >
                 Какие проблемы решит проект?
               </Typography>
@@ -177,20 +177,20 @@ export default function Services() {
             </div>
             <div className="flex flex-col">
               <Typography
-                className="font-womby mx-auto mb-4 text-3xl font-bold uppercase leading-tight text-black md:text-3xl xl:mb-8"
+                className="mx-auto mb-4 font-womby text-3xl font-bold uppercase leading-tight text-black md:text-3xl xl:mb-8"
                 variant="h1"
               >
                 Чертежи для эргономичного интерьера за 2 недели.
               </Typography>
               <Typography
                 variant="h1"
-                className="text-primary font-womby mb-4 text-base font-bold leading-relaxed text-black group-hover:text-white md:text-xl lg:text-base"
+                className="text-primary mb-4 font-womby text-base font-bold leading-relaxed text-black group-hover:text-white md:text-xl lg:text-base"
               >
                 Состав проекта “ЛЕГКИЙ СТАРТ”:
               </Typography>
               <Typography
                 variant="h1"
-                className="text-primary font-womby mb-8 text-base font-bold leading-relaxed text-black group-hover:text-white md:text-xl lg:text-base"
+                className="text-primary mb-8 font-womby text-base font-bold leading-relaxed text-black group-hover:text-white md:text-xl lg:text-base"
               >
                 <ul className="flex flex-col gap-4">
                   <li className="relative pl-5">

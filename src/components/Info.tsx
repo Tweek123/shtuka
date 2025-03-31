@@ -1,32 +1,29 @@
 import React from 'react';
 import Typography from './Typography';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
 const Info = ({
-  icon,
+  Icon,
   text,
   subtext,
   className,
 }: {
-  icon: IconDefinition;
+  Icon: any;
   text: string | React.ReactElement;
   subtext: string | React.ReactElement;
   className?: string;
 }) => {
   return (
     <div
-      className={`flex w-full flex-col items-center justify-center px-4 py-24 text-center sm:py-12 md:px-8 md:py-24 ${className} lg:px-4`}
+      className={`flex w-full flex-col items-center justify-center px-4 py-24 text-center md:px-8 md:py-24 ${className} md:px-4`}
     >
-      <FontAwesomeIcon
-        height={64}
-        width={64}
-        className="mb-8 size-16 text-[#ce528e] md:mb-8 md:size-12 lg:mb-4"
-        icon={icon}
+      <Icon
+        className="mb-8 flex size-16 flex-col text-[#ce528e] md:mb-8 md:size-12"
+        stroke="#ce528e"
       />
+
       {typeof text === 'string' ? (
         <Typography
-          className="lg:text-3x mb-4 font-normal text-[#111] hover:text-[#ce528e] md:text-3xl lg:mb-4 lg:text-2xl"
+          className="mb-4 text-4xl font-normal text-[#111] transition duration-500 hover:text-[#ce528e] md:mb-4 md:text-2xl"
           fontFamily="helveticaNeue"
           variant="h1"
         >
@@ -37,7 +34,7 @@ const Info = ({
       )}
       {typeof subtext === 'string' ? (
         <Typography
-          className="text-base font-light text-black group-hover:text-[#ce528e] md:text-xl lg:text-xs"
+          className="text-base font-light text-black group-hover:text-[#ce528e] md:text-xs"
           fontFamily="helveticaNeue"
           variant="p"
         >

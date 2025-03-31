@@ -65,7 +65,7 @@ export default function Services() {
     <main className="">
       <Section>
         <Container className="">
-          <div className="lg:-mx:16 -mx-4 -my-8 flex min-h-screen flex-grow flex-col items-center justify-center bg-[#111] md:-mx-8 md:-my-12 lg:-my-16">
+          <div className="lg:-mx:16 -mx-4 -my-8 flex min-h-screen flex-grow flex-col items-center justify-center bg-[#111] md:-mx-16 md:-my-16 lg:-my-16">
             <Typography
               className="text-center text-6xl font-normal uppercase text-white md:text-8xl lg:text-6xl"
               variant="h1"
@@ -77,11 +77,11 @@ export default function Services() {
       </Section>
       <Section>
         <Container>
-          <div className="-mx-4 -my-8 grid grow grid-cols-1 md:-mx-8 md:-my-12 md:grid-cols-4 md:[grid-template-areas:'col-1_col-1_col-2_col-2'_'col-3_col-3_col-3_col-3'] lg:-my-16 lg:grid-cols-3 lg:[grid-template-areas:'col-1_col-2_col-3']">
+          <div className="-mx-4 -my-8 grid grow grid-cols-1 md:-mx-16 md:-my-16 md:grid-cols-4 md:[grid-template-areas:'col-1_col-1_col-2_col-2'_'col-3_col-3_col-3_col-3'] lg:-my-16 lg:grid-cols-3 lg:[grid-template-areas:'col-1_col-2_col-3']">
             <div className="flex flex-grow flex-col bg-[#fed841] px-4 py-8 md:px-8 md:py-12 md:[grid-area:col-1] lg:py-16">
               <div className="flex flex-col">
                 <Typography
-                  className="font-VarelaRound mb-6 text-sm font-light uppercase leading-relaxed text-[#eb2f5b] md:mb-8 md:text-2xl lg:text-base"
+                  className="mb-6 font-VarelaRound text-sm font-light uppercase leading-relaxed text-[#eb2f5b] md:mb-8 md:text-2xl lg:text-base"
                   variant="h1"
                 >
                   проект "ПРЕМИУМ"
@@ -89,13 +89,13 @@ export default function Services() {
                 <div className="flex flex-col">
                   <Typography
                     variant="h1"
-                    className="text-primary font-womby mb-4 text-3xl font-normal uppercase leading-tight text-[#111] group-hover:text-white md:text-3xl lg:mb-8 lg:text-center lg:text-xl"
+                    className="text-primary mb-4 font-womby text-3xl font-normal uppercase leading-tight text-[#111] group-hover:text-white md:text-3xl lg:mb-8 lg:text-center lg:text-xl"
                   >
                     Полный контроль за стройкой для идеального результата.
                   </Typography>
                   <Typography
                     variant="h1"
-                    className="text-primary font-VarelaRound text-primary font-womby mb-8 text-3xl font-light text-black group-hover:text-white md:text-xl lg:text-base"
+                    className="text-primary text-primary mb-8 font-VarelaRound font-womby text-3xl font-light text-black group-hover:text-white md:text-xl lg:text-base"
                   >
                     Контроль закупок, поиск оптимальных цен и подготовка счетов,
                     ежедневное общение со строителями и исполнителями, авторский

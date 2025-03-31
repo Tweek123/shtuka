@@ -5,21 +5,22 @@ import Owner from '@/components/Owner';
 import Image from 'next/image';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import Avatar from '../../components/Avatar';
 import Info from '../../components/Info';
 import Quote from '../../components/Quote';
+import { Home } from 'react-feather';
+import { House } from '@/components/Icons';
 
 export default function TeamIntroduction() {
   return (
-    <Section className="">
+    <Section className="md:!px-0">
       <Container className="">
         <div className="grid grid-cols-1">
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-[3fr,2fr,2fr]">
+          <div className="grid grid-cols-1 md:grid-cols-[42.86%,28.57%,28.57%]">
             <div className="flex flex-col">
-              <div className="mb-12 flex flex-col md:py-12 lg:mb-0 lg:py-0">
+              <div className="mb-12 flex flex-col md:mb-0 md:py-0">
                 <Typography
-                  className="mx-auto mb-6 text-sm md:mb-8 md:text-2xl lg:mb-4 lg:text-base"
+                  className="mx-auto mb-6 text-sm md:mb-4 md:text-base"
                   color="text-[#eb2f5b]"
                   variant="p"
                   fontFamily="VarelaRound"
@@ -27,7 +28,7 @@ export default function TeamIntroduction() {
                   С ВАМИ БУДУТ РАБОТАТЬ
                 </Typography>
                 <Typography
-                  className="mx-auto mb-12 text-center text-black md:text-3xl lg:mb-4 lg:text-xl"
+                  className="mx-auto mb-12 text-center text-black md:mb-4 md:text-xl"
                   color="text-[#eb2f5b]"
                   variant="h1"
                   fontFamily="ArialBlack"
@@ -40,12 +41,12 @@ export default function TeamIntroduction() {
                 <Button className="md:hidden">РАССЧИТАТЬ ПРОЕКТ</Button>
                 <Button
                   size="md"
-                  className="hidden text-nowrap md:block lg:mb-8 xl:mb-4"
+                  className="hidden text-nowrap md:mb-4 md:mb-8 md:block"
                 >
                   РАССЧИТАТЬ ПРОЕКТ
                 </Button>
               </div>
-              <div className="mb-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-12">
+              <div className="mb-12 grid grid-cols-1 gap-4 px-8 md:grid-cols-2 md:gap-12 md:px-0">
                 <Owner
                   title={`ЮЛИЯ ЯКОВЛЕВА. АРХИТЕКТОР`}
                   src={'/images/avatar/yakovleva.jpg'}
@@ -64,7 +65,7 @@ export default function TeamIntroduction() {
                 />
               </div>
             </div>
-            <div className="relative flex aspect-[4/5] w-full flex-col sm:aspect-[2/1] md:aspect-auto">
+            <div className="relative flex aspect-[4/5] w-full flex-col md:aspect-auto">
               <Image
                 src={'/images/custom/clinik.jpg'}
                 alt="Avatar"
@@ -72,10 +73,10 @@ export default function TeamIntroduction() {
                 className="object-cover object-[50%_20%]"
               />
             </div>
-            <div className="flex flex-col justify-center gap-8 xl:gap-0">
+            <div className="flex flex-col justify-center gap-8 md:gap-0 md:px-8">
               <Info
-                className="xl:py-4"
-                icon={faHouse}
+                className="pb-0 md:py-4"
+                Icon={House}
                 text={'ОТЗЫВЫ О НАС:'}
                 subtext={'РЕАЛИЗАЦИЯ ИНТЕРЬЕРА КОСМЕТОЛОГИИ'}
               />
@@ -98,7 +99,7 @@ export default function TeamIntroduction() {
                 />
                 <div className="flex flex-col">
                   <Typography
-                    className="md:text-2xl lg:text-xs"
+                    className="md:text-xs"
                     variant="p"
                     color="text-black"
                     fontFamily="helveticaNeue"
@@ -106,7 +107,7 @@ export default function TeamIntroduction() {
                     ГУЛЬНАРА А.
                   </Typography>
                   <Typography
-                    className="md:text-2xl lg:text-xs"
+                    className="md:text-xs"
                     variant="p"
                     color="text-[#0A0A0A]"
                     fontFamily="helveticaNeue"

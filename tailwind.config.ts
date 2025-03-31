@@ -13,6 +13,7 @@ const config: Config = {
       CourierNew: ['CourierNew'],
       ArialBlack: ['ArialBlack'],
       helveticaNeue: ['HelveticaNeue'],
+      material: ['Material Symbols Outlined'],
     },
     extend: {
       colors: {

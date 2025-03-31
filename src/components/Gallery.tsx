@@ -79,7 +79,7 @@ export default function Gallery() {
           </div>
         ))}
       </div>
-      <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3">
         <AnimatePresence>
           {filteredProjects.map((project) => (
             <motion.div
@@ -93,13 +93,13 @@ export default function Gallery() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="aspect-[1.5/1] w-full object-cover grayscale transition-all duration-300 hover:grayscale-0 md:aspect-[1/1.2] lg:aspect-[1.5/1]"
+                  className="aspect-[1.5/1] w-full object-cover grayscale transition-all duration-300 hover:grayscale-0 md:aspect-[1.5/1]"
                 />
                 <div className="absolute bottom-0 left-0 right-0 translate-y-full transform bg-[#eb2f5b] p-4 text-white transition-transform duration-300 group-hover:translate-y-0">
                   <h3 className="text-lg font-bold md:text-3xl">
                     {project.title}
                   </h3>
-                  <p className="text-sm uppercase md:text-3xl lg:text-sm">
+                  <p className="text-sm uppercase md:text-sm">
                     {project.category}
                   </p>
                 </div>

@@ -4,17 +4,19 @@ const Quote = ({
   className,
   mode = 'defaut',
   text,
+  textClassName,
 }: {
   className?: string;
   mode?: 'defaut' | 'black';
   text: string;
+  textClassName?: string;
 }) => {
   if (mode === 'black') {
     return (
       <div className={`border-8 border-[#EB2F5B] ${className}`}>
         <div className="flex-colp-4 relative flex bg-[#111111] p-8">
           <Typography
-            className="text-lg uppercase leading-[3] md:text-3xl lg:text-base"
+            className={`text-lg uppercase leading-[3] md:text-base ${textClassName || ''}`}
             variant="h1"
             fontFamily="ArialBlack"
             color="text-white"
@@ -32,7 +34,7 @@ const Quote = ({
       className={`relative flex flex-col border-8 border-[#EB2F5B] p-4 ${className}`}
     >
       <Typography
-        className="text-lg uppercase leading-[3] md:text-3xl lg:text-base"
+        className={`text-lg uppercase leading-[3] md:text-base ${textClassName || ''}`}
         variant="h1"
         fontFamily="ArialBlack"
         color="text-[#332f2f]"

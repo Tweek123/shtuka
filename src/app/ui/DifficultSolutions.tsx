@@ -7,7 +7,7 @@ import Underline from '../../components/Underline';
 export default function DifficultSolutions() {
   return (
     <Section>
-      <Container className="lg:!pb-0">
+      <Container className="!pb-0">
         <div className="flex flex-1 flex-col">
           <Typography
             variant="h1"
@@ -16,12 +16,12 @@ export default function DifficultSolutions() {
             fontFamily="ArialBlack"
           >
             <Underline className="leading-[1.18]">
-              СЛОЖНЫЕ РЕАЛИЗОВАННЫЕ РЕШЕНИЯ РЕШЕНИЯ НА НАШИХ ОБЪЕКТАХ:
+              СЛОЖНЫЕ РЕАЛИЗОВАННЫЕ РЕШЕНИЯ НА НАШИХ ОБЪЕКТАХ:
             </Underline>
           </Typography>
-          <div className="-mx-4 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="-mx-4 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-2 xl:grid-cols-4">
             <Project
-              className="sm:aspect-[2/1] md:aspect-square xl:aspect-[1/1.2]"
+              className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
               src="/images/projects/1.jpg"
               text={'ХОЛЛ ЧАСТНОГО ДОМА'}
               subtext={
@@ -29,7 +29,7 @@ export default function DifficultSolutions() {
               }
             />
             <Project
-              className="sm:aspect-[2/1] md:aspect-square xl:aspect-[1/1.2]"
+              className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
               src="/images/projects/2.jpg"
               text={'ВАННАЯ КОМНАТА С ЗИМНИМ САДОМ'}
               subtext={
@@ -37,25 +37,25 @@ export default function DifficultSolutions() {
               }
             />
             <Project
-              className="sm:aspect-[2/1] md:aspect-square xl:aspect-[1/1.2]"
+              className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
               src="/images/projects/3.jpg"
               text={'БАССЕЙН В КОТТЕДЖЕ'}
               subtext={'СКРУГЛЕННЫЕ СТЕНЫ, ИМИТАЦИЯ СЛЭБОВ КОЛОТОГО КАМНЯ'}
             />
             <Project
-              className="sm:aspect-[2/1] md:aspect-square xl:aspect-[1/1.2]"
+              className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
               src="/images/projects/4.jpg"
               text={'БАННЫЙ КОМПЛЕКС В КОТТЕДЖЕ'}
               subtext={'БАЛКИ НА ПОТОЛКЕ, НАСТЕННОЕ ПАННО С РАСТЕНИЯМИ'}
             />
             <Project
-              className="sm:aspect-[2/1] md:aspect-square xl:aspect-[1/1.2]"
+              className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
               src="/images/projects/5.jpg"
               text={'ВАННАЯ КОМНАТА ЧАСТНОГО ДОМА'}
               subtext={'УНИКАЛЬНАЯ АВТОРСКАЯ МОЗАИКА'}
             />
             <Project
-              className="sm:aspect-[2/1] md:aspect-square xl:aspect-[1/1.2]"
+              className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
               src="/images/projects/6.jpg"
               text={'ВАННАЯ КОМНАТА С ЗИМНИМ САДОМ'}
               subtext={
@@ -63,13 +63,13 @@ export default function DifficultSolutions() {
               }
             />
             <Project
-              className="sm:aspect-[2/1] md:aspect-square xl:aspect-[1/1.2]"
+              className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
               src="/images/projects/7.jpg"
               text={'КОСМЕТОЛОГИЯ'}
               subtext={'СКРУГЛЕННЫЕ РИФЛЕНЫЕ СТЕНЫ, ВСТРОЕННАЯ МЕБЕЛЬ'}
             />
             <Project
-              className="sm:aspect-[2/1] md:aspect-square xl:aspect-[1/1.2]"
+              className="aspect-[545/744] md:aspect-square xl:aspect-[1/1.2]"
               src="/images/projects/8.jpg"
               text={'КУХНЯ В КОТТЕДЖЕ'}
               subtext={'ШПОНИРОВАННЫЕ ПОТОЛКИ, ВСТРОЕННАЯ МЕБЕЛЬ'}

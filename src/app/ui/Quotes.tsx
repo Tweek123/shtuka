@@ -5,26 +5,59 @@ import Section from '../../components/Section';
 import Slider from '../../components/Slider';
 import Image from 'next/image';
 import Avatar from '@/components/Avatar';
+import Underline from '@/components/Underline';
 
 const slidesDesktop = [
   {
-    src: '/images/notes/shop-1.jpg',
+    src: '/images/notes/notes/1.jpg',
     comment:
-      '“РЕЗУЛЬТАТ ПРЕДВОСХИТИЛ ОЖИДАНИЯ! САМОЕ ГЛАВНОЕ, ЧТО МЫ КАЖДЫЙ ДЕНЬ СЛЫШИМ ХВАЛЕБНЫЕ ОТЗЫВЫ ОБ ИНТЕРЬЕРЕ ОТ КЛИЕНТОВ НАШЕЙ КЛИНИКИ.”',
+      '“В квартире полностью закончен ремонт, поставлена мебель, было оказано полное сопровождение, от проекта до реализации.”',
     author: {
-      src: '/images/notes/shop-1.jpg',
-      text: 'РУКОВОДИТЕЛЬ КОСМЕТоЛОГИческой клиники, АМНИЕВА ГУЛЬНАРА',
-      subtext: 'Отзыв на дизайн интерьера Клиники RESTETICA в Уфе',
+      text: 'Анастасия.',
+      subtext: 'Отзыв на дизайн квартиры студии',
     },
   },
   {
-    src: '/images/notes/shop-2.jpg',
-    comment:
-      '“РЕЗУЛЬТАТ ПРЕДВОСХИТИЛ ОЖИДАНИЯ! САМОЕ ГЛАВНОЕ, ЧТО МЫ КАЖДЫЙ ДЕНЬ СЛЫШИМ ХВАЛЕБНЫЕ ОТЗЫВЫ ОБ ИНТЕРЬЕРЕ ОТ КЛИЕНТОВ НАШЕЙ КЛИНИКИ.”',
+    src: '/images/notes/notes/2.jpg',
+    comment: '“Супер! Иван, ты – гений! Все очень нравится!”',
     author: {
-      src: '/images/notes/shop-1.jpg',
-      text: 'РУКОВОДИТЕЛЬ КОСМЕТоЛОГИческой клиники, АМНИЕВА ГУЛЬНАРА',
-      subtext: 'Отзыв на дизайн интерьера Клиники RESTETICA в Уфе',
+      text: 'Гульшат.',
+      subtext: 'Отзыв на дизайн квартиры с терассой',
+    },
+  },
+  {
+    src: '/images/notes/notes/poll-1.jpg',
+    comment: '“БАССЕЙН ГОТОВ! РЕМОНТ ЗАКОНЧИЛИ”',
+    author: {
+      text: 'Рустам и Татьяна',
+      subtext: 'Отзыв на дизайн интерьера дома',
+    },
+  },
+  {
+    src: '/images/notes/notes/4.jpg',
+    comment:
+      '“Кто приходит, все в шоке! Зять сказал, что даже в самых крутых 5-звездочных отелях такого не видел! И это, конечно, благодаря вам!”',
+    author: {
+      text: 'Андрей.',
+      subtext: 'Отзыв на дизайн интерьера квартиры',
+    },
+  },
+  {
+    src: '/images/notes/notes/5.jpg',
+    comment:
+      '“Закончили ремонт и магазин открыли! Все получилось очень красиво, спасибо за работу! ”',
+    author: {
+      text: 'Алия.',
+      subtext: 'Отзыв на дизайн Кафе-пекарни Шамилевский в Языково',
+    },
+  },
+  {
+    src: '/images/notes/notes/6.jpg',
+    comment:
+      '“Спасибо, Иван, Барбершоп запустили, удалось реализовать все как по проекту.”',
+    author: {
+      text: 'Марат.',
+      subtext: 'Отзыв на дизайн Барбершопа "Че"',
     },
   },
 ];
@@ -32,12 +65,10 @@ const slidesDesktop = [
 export default function Quotes() {
   const params = {
     breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
+        slidesPerGroup: 2,
       },
     },
   };
@@ -45,45 +76,61 @@ export default function Quotes() {
     <Section>
       <Container>
         <div className="flex w-full flex-col">
+          <Typography
+            variant="h1"
+            className="mb-8 text-center font-extrabold leading-[1.5] md:text-3xl"
+            color="text-black"
+            fontFamily="ArialBlack"
+          >
+            <Underline className="leading-[1.18]">
+              ОТЗЫВЫ НА ДИЗАЙН ИНТЕРЬЕРА
+            </Underline>
+          </Typography>
           <Slider params={params}>
             {slidesDesktop.map(({ src, comment, author }) => (
-              <div className="flex flex-col gap-8 py-8 lg:flex-row">
-                <div className="relative aspect-[1023/640] lg:w-1/2">
+              <div className="flex flex-row gap-8">
+                <div className="relative aspect-[1200/1477] w-4/6">
                   <Image
                     src={src}
                     alt="Hero 1"
                     fill
-                    className="object-cover object-center"
+                    className="object-contain object-top"
                   />
                 </div>
-                <div className="flex flex-col lg:h-fit lg:w-1/2">
+                <div className="flex h-fit w-2/6 flex-col">
                   <Quote
-                    className="max-w-full lg:mb-8 lg:max-w-none"
+                    className="mb-8"
+                    textClassName="!text-base md:!text-xs"
                     text={comment}
                   />
+                  {author?.text && (
+                    <Typography
+                      className="mb-2 text-xs uppercase"
+                      variant="p"
+                      color="text-black"
+                      fontFamily="helveticaNeue"
+                    >
+                      {author.text}
+                    </Typography>
+                  )}
+                  {author?.subtext && (
+                    <Typography
+                      className="text-xs uppercase"
+                      variant="p"
+                      color="text-[#0A0A0A]"
+                      fontFamily="helveticaNeue"
+                    >
+                      {author.subtext}
+                    </Typography>
+                  )}
 
-                  <Typography
-                    className="uppercase md:text-2xl lg:mb-2 lg:text-xs"
-                    variant="p"
-                    color="text-black"
-                    fontFamily="helveticaNeue"
-                  >
-                    {author.text}
-                  </Typography>
-                  <Typography
-                    className="uppercase md:text-2xl lg:text-xs"
-                    variant="p"
-                    color="text-[#0A0A0A]"
-                    fontFamily="helveticaNeue"
-                  >
-                    {author.subtext}
-                  </Typography>
-                  <Avatar
-                    className="hidden md:flex"
-                    size="sm"
-                    hasBorder={false}
-                    src="https://1shtuka.ru/wordpress/wp-content/uploads/2021/03/7.jpg"
-                  />
+                  {author?.src && (
+                    <Avatar
+                      size="sm"
+                      hasBorder={false}
+                      src="https://1shtuka.ru/wordpress/wp-content/uploads/2021/03/7.jpg"
+                    />
+                  )}
                 </div>
               </div>
             ))}

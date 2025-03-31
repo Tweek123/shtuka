@@ -6,6 +6,8 @@ import Typography from '@/components/Typography';
 import Divider from '@/components/Divider';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
+import { Home } from 'react-feather';
+import { House } from '@/components/Icons';
 
 const desktopSlides = [
   '/images/examples/desktop/slider/1.jpg',
@@ -18,11 +20,11 @@ const desktopSlides = [
 export default function Testimonials() {
   return (
     <Section className="!px-0">
-      <Container className="!py-0 lg:-mt-16">
-        <div className="grid w-full grid-cols-1 gap-8 lg:grid-cols-[69.8%,31.2%] lg:gap-0">
+      <Container className="!py-0 md:-mt-16">
+        <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-[71.4%,28.6%] md:gap-0">
           <Info
-            className="lg:order-2 lg:py-0 lg:text-center"
-            icon={faPaintRoller}
+            className="pb-0 md:order-2 md:!py-0 md:text-center"
+            Icon={House}
             text={'ВЫЯВИМ НУЖНЫЙ ВАМ СТИЛЬ ИНТЕРЬЕРА И РЕАЛИЗУЕМ ЕГО'}
             subtext={
               'ИНДИВИДУАЛЬНЫЙ ПОДБОР ИНТЕРЬЕРА, В ЗАВИСИМОСТИ ОТ ОСОБЕННОСТЕЙ ПОМЕЩЕНИЯ, ЗАДАЧ И ВАШИХ ПРЕДПОЧТЕНИЙ'
@@ -31,7 +33,7 @@ export default function Testimonials() {
 
           <div className="z-40 flex flex-col shadow-[0_0_0.4rem_0_rgba(0,0,0,0.3)]">
             <Slider className="min-h-screen w-full md:hidden">
-              <div className="relative min-h-screen w-full">
+              <div className="relative aspect-[800/1100] w-full">
                 <Image
                   src={'/images/examples/16.jpg'}
                   alt="Example 1"
@@ -68,7 +70,7 @@ export default function Testimonials() {
                   </Typography>
                 </div>
               </div>
-              <div className="relative min-h-screen w-full">
+              <div className="relative aspect-[800/1100] w-full">
                 <Image
                   src={'/images/examples/17.jpg'}
                   alt="Example 2"
@@ -105,7 +107,7 @@ export default function Testimonials() {
                   </Typography>
                 </div>
               </div>
-              <div className="relative min-h-screen w-full">
+              <div className="relative aspect-[800/1100] w-full">
                 <Image
                   src={'/images/examples/19.jpg'}
                   alt="Example 3"
@@ -142,7 +144,7 @@ export default function Testimonials() {
                   </Typography>
                 </div>
               </div>
-              <div className="relative min-h-screen w-full">
+              <div className="relative aspect-[800/1100] w-full">
                 <Image
                   src={'/images/examples/18.jpg'}
                   alt="Example 4"
@@ -179,7 +181,7 @@ export default function Testimonials() {
                   </Typography>
                 </div>
               </div>
-              <div className="relative min-h-screen w-full">
+              <div className="relative aspect-[800/1100] w-full">
                 <Image
                   src={'/images/examples/20.jpg'}
                   alt="Example 5"
@@ -217,7 +219,7 @@ export default function Testimonials() {
               </div>
             </Slider>
 
-            <Slider className="hidden aspect-video w-full md:block lg:order-1 xl:aspect-auto">
+            <Slider className="hidden aspect-video w-full md:order-1 md:block md:aspect-auto">
               {desktopSlides.map((src) => (
                 <div className="relative aspect-[1800/600] w-full">
                   <div className="flex h-full flex-row gap-8">

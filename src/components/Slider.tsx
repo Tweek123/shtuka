@@ -18,7 +18,7 @@ const Slider = ({ params = {}, children, className }: SliderProps) => {
   return (
     <div className={`relative w-full ${className}`}>
       <button
-        className="custom-prev absolute !z-50"
+        className="custom-prev absolute z-0"
         onClick={() => {
           swiperRef.current?.slidePrev();
         }}
@@ -42,7 +42,7 @@ const Slider = ({ params = {}, children, className }: SliderProps) => {
         ))}
       </Swiper>
       <button
-        className="custom-next absolute !z-50"
+        className="custom-next absolute"
         onClick={() => swiperRef.current?.slideNext()}
       >
         →

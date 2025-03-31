@@ -9,8 +9,8 @@ import Divider from '@/components/Divider';
 export default function Consultation() {
   return (
     <Section background="bg-[#EFEFEF]">
-      <Container className="max-h-screen">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr,1fr] lg:gap-12">
+      <Container>
+        <div className="grid grid-cols-1 md:grid-cols-[1fr,1fr] md:gap-12">
           <div className="flex flex-col">
             <Typography
               className="mb-8 font-light md:mb-8 md:text-2xl"
@@ -42,19 +42,19 @@ export default function Consultation() {
               интерьера.
             </Typography>
           </div>
-          <div className="relative mx-auto flex w-full max-w-[480px] flex-col overflow-hidden rounded-[4rem] bg-white px-4 py-12 lg:my-auto lg:max-w-none">
+          <div className="relative mx-auto flex w-full flex-col overflow-hidden rounded-3xl bg-white px-4 py-24 md:my-auto md:max-w-none md:rounded-[4rem]">
             <FontAwesomeIcon
               height={64}
               width={64}
-              className="absolute left-0 right-0 top-1 mx-auto mb-8 size-16 text-green-600 md:mb-8 md:size-12 lg:mb-16 lg:size-10"
+              className="absolute left-0 right-0 top-2 mx-auto mb-8 size-16 text-green-600 md:top-1 md:mb-16 md:size-10"
               icon={faWhatsapp}
             />
             <Divider
-              className="absolute left-0 top-12 w-full bg-gray-500"
+              className="absolute left-0 top-20 w-full bg-gray-500 md:top-12"
               thickness="1px"
             />
             <Typography
-              className="mb-8 text-center font-light md:text-3xl lg:mt-8 lg:text-2xl"
+              className="mb-8 mt-16 text-center font-light md:mt-8 md:text-2xl"
               variant="h3"
               fontFamily="ArialBlack"
               color="text-black"

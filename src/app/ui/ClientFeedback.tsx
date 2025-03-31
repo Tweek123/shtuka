@@ -5,6 +5,7 @@ import Avatar from '@/components/Avatar';
 import Typography from '@/components/Typography';
 import Container from '@/components/Container';
 import Section from '@/components/Section';
+import { Home } from 'react-feather';
 
 export default function ClientFeedback() {
   return (
@@ -12,7 +13,7 @@ export default function ClientFeedback() {
       <Container className="!py-0">
         <div className="flex flex-col gap-8">
           <Info
-            icon={faHouse}
+            Icon={Home}
             text={'ОТЗЫВЫ О НАС:'}
             subtext={'РЕАЛИЗАЦИЯ ИНТЕРЬЕРА КОСМЕТОЛОГИИ'}
           />
@@ -35,7 +36,7 @@ export default function ClientFeedback() {
             />
             <div className="flex flex-col">
               <Typography
-                className="md:text-2xl lg:text-sm"
+                className="md:text-sm"
                 variant="p"
                 color="text-black"
                 fontFamily="womby"
@@ -43,7 +44,7 @@ export default function ClientFeedback() {
                 ГУЛЬНАРА А.
               </Typography>
               <Typography
-                className="md:text-2xl lg:text-sm"
+                className="md:text-sm"
                 variant="p"
                 color="text-[#0A0A0A]"
                 fontFamily="womby"

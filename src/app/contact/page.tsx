@@ -18,7 +18,11 @@ export default function Contact() {
     console.log('Form submitted:', formData);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -29,19 +33,25 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
-      
-      <main className="pt-24 pb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold text-center mb-4">Свяжитесь с нами</h1>
-            <p className="text-xl text-gray-600 text-center mb-12">
-              Готовы обсудить ваш проект? Заполните форму ниже, и мы свяжемся с вами в ближайшее время.
+
+      <main className="pb-20 pt-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl">
+            <h1 className="mb-4 text-center text-4xl font-bold">
+              Свяжитесь с нами
+            </h1>
+            <p className="mb-12 text-center text-xl text-gray-600">
+              Готовы обсудить ваш проект? Заполните форму ниже, и мы свяжемся с
+              вами в ближайшее время.
             </p>
-            
-            <div className="bg-white rounded-lg shadow-lg p-8">
+
+            <div className="rounded-lg bg-white p-8 shadow-lg">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="name"
+                    className="mb-1 block text-sm font-medium text-gray-700"
+                  >
                     Ваше имя
                   </label>
                   <input
@@ -51,12 +61,15 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:ring-2 focus:ring-gray-900"
                   />
                 </div>
-                
+
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="email"
+                    className="mb-1 block text-sm font-medium text-gray-700"
+                  >
                     Email
                   </label>
                   <input
@@ -66,12 +79,15 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:ring-2 focus:ring-gray-900"
                   />
                 </div>
-                
+
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="phone"
+                    className="mb-1 block text-sm font-medium text-gray-700"
+                  >
                     Телефон
                   </label>
                   <input
@@ -80,12 +96,15 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:ring-2 focus:ring-gray-900"
                   />
                 </div>
-                
+
                 <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="service"
+                    className="mb-1 block text-sm font-medium text-gray-700"
+                  >
                     Интересующая услуга
                   </label>
                   <select
@@ -94,7 +113,7 @@ export default function Contact() {
                     value={formData.service}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:ring-2 focus:ring-gray-900"
                   >
                     <option value="">Выберите услугу</option>
                     <option value="web-design">Веб-дизайн</option>
@@ -102,9 +121,12 @@ export default function Contact() {
                     <option value="ui-ux">UI/UX Дизайн</option>
                   </select>
                 </div>
-                
+
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="message"
+                    className="mb-1 block text-sm font-medium text-gray-700"
+                  >
                     Сообщение
                   </label>
                   <textarea
@@ -114,30 +136,30 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                    className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-transparent focus:ring-2 focus:ring-gray-900"
                   ></textarea>
                 </div>
-                
+
                 <button
                   type="submit"
-                  className="w-full bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-200"
+                  className="w-full rounded-lg bg-gray-900 px-8 py-3 text-white transition-colors duration-200 hover:bg-gray-800"
                 >
                   Отправить сообщение
                 </button>
               </form>
             </div>
-            
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+            <div className="mt-12 grid grid-cols-1 gap-8 text-center md:grid-cols-3">
               <div>
-                <h3 className="text-lg font-semibold mb-2">Email</h3>
+                <h3 className="mb-2 text-lg font-semibold">Email</h3>
                 <p className="text-gray-600">info@designbureau.com</p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">Телефон</h3>
+                <h3 className="mb-2 text-lg font-semibold">Телефон</h3>
                 <p className="text-gray-600">+7 (999) 123-45-67</p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2">Адрес</h3>
+                <h3 className="mb-2 text-lg font-semibold">Адрес</h3>
                 <p className="text-gray-600">Москва, ул. Примерная, д. 123</p>
               </div>
             </div>
@@ -146,4 +168,4 @@ export default function Contact() {
       </main>
     </div>
   );
-} 
+}

@@ -22,13 +22,11 @@
 }
 
 html {
-  font-size: calc(16 * (100vw / 1280));
+  font-size: calc(16 * (100vw / 640));
 
-  @media (max-width: 768px) {
-    font-size: calc(16 * (100vw / 768));
-  }
-  @media (max-width: 640px) {
-    font-size: calc(16 * (100vw / 640));
+  /* Для планшетов (640px и выше) */
+  @media (min-width: 768px) {
+    font-size: calc(16 * (100vw / 1280));
   }
 }
 
@@ -71,6 +69,13 @@ html {
     font-weight: 400;
     font-display: swap;
     src: url('/fonts/HelveticaNeueLight.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://example.com/material-symbols.woff) format('woff');
   }
 }
 
@@ -241,7 +246,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 50;
+  z-index: 1s;
 }
 
 .custom-prev {

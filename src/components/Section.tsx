@@ -12,7 +12,7 @@ const Section: React.FC<SectionProps> = ({
   children,
   className,
   background,
-  padding = 'px-4 md:px-8 lg:px:16',
+  padding = 'px-4 md:px-16',
 }) => {
   return (
     <section

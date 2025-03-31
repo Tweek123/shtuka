@@ -9,11 +9,11 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <Section padding="px-0">
-      <Container className="relative !max-w-[100%] overflow-hidden !py-0">
+      <Container className="relative max-h-screen !max-w-[100%] overflow-hidden !py-0 !pt-16 md:!pt-7">
         <div className="relative flex w-full flex-col">
           <div className="relative flex w-full flex-col">
-            <Slider className="absolute z-10 h-full w-full">
-              <div className="relative aspect-[1600/640] w-full">
+            <Slider className="absolute h-full w-full">
+              <div className="relative min-h-screen w-full md:aspect-[1600/640] md:min-h-[inherit]">
                 <Image
                   src={'/images/hero/1.jpg'}
                   alt="Hero 1"
@@ -27,7 +27,7 @@ const Hero = () => {
                   className="hidden object-cover object-center md:block"
                 />
               </div>
-              <div className="relative aspect-[1600/640] w-full">
+              <div className="relative min-h-screen w-full md:aspect-[1600/640] md:min-h-[inherit]">
                 <Image
                   src={'/images/hero/2.jpg'}
                   alt="Hero 2"
@@ -41,7 +41,7 @@ const Hero = () => {
                   className="hidden object-cover object-center md:block"
                 />
               </div>
-              <div className="relative aspect-[1600/640] w-full">
+              <div className="relative min-h-screen w-full md:aspect-[1600/640] md:min-h-[inherit]">
                 <Image
                   src={'/images/hero/3.jpg'}
                   alt="Hero 3"
@@ -57,16 +57,16 @@ const Hero = () => {
               </div>
             </Slider>
           </div>
-          <div className="absolute left-[16%] top-[calc(13%)] z-20 mx-auto flex w-fit flex-col">
-            <div className="relative mb-2 flex flex-row gap-2 lg:justify-normal">
+          <div className="absolute left-0 right-0 top-[8%] z-10 mx-auto flex w-fit flex-col md:left-[16%] md:right-auto md:top-[calc(13%)] md:min-h-[inherit]">
+            <div className="relative mb-2 flex flex-row gap-2 md:justify-normal">
               <Divider
                 className="absolute"
                 orientation="vertical"
-                thickness="7px"
+                thickness="0.3rem"
                 color="bg-black"
               />
               <Typography
-                className="px-2 py-1 text-lg md:text-2xl lg:ml-4 lg:text-sm"
+                className="ml-4 px-2 py-1 text-lg md:ml-4 md:text-sm"
                 variant="h1"
                 color="text-white"
                 background="bg-black"
@@ -74,7 +74,7 @@ const Hero = () => {
                 SHTUKA
               </Typography>
               <Typography
-                className="md:text-x px-2 py-1 text-lg font-light lg:text-sm"
+                className="px-2 py-1 text-lg font-light md:text-sm"
                 variant="h1"
                 color="text-[#CBCAC6]"
                 background="bg-black"
@@ -82,15 +82,15 @@ const Hero = () => {
                 СТУДИЯ ЖИГУЛЕВА И ЯКОВЛЕВОЙ
               </Typography>
             </div>
-            <div className="relative flex flex-row justify-between bg-gray-200 bg-opacity-40 lg:mt-0">
+            <div className="relative flex flex-row justify-between bg-gray-200 bg-opacity-40 md:mt-0">
               <Divider
                 className="absolute"
                 orientation="vertical"
-                thickness="7px"
+                thickness="0.3rem"
                 color="bg-black"
               />
               <Typography
-                className="px-1 py-1 text-[28px] text-black md:py-2 md:text-5xl lg:px-4 lg:py-1 lg:text-6xl lg:font-normal"
+                className="px-6 py-1 text-5xl text-black md:py-1 md:text-6xl md:font-normal"
                 variant="h1"
               >
                 ДИЗАЙН ИНТЕРЬЕРА
@@ -98,26 +98,26 @@ const Hero = () => {
               <Divider
                 className="absolute right-0"
                 orientation="vertical"
-                thickness="7px"
+                thickness="0.3rem"
               />
             </div>
           </div>
-          <div className="absolute z-50 mt-auto lg:right-[12%] lg:top-[40%] lg:ml-28 lg:mt-8 lg:w-fit">
+          <div className="absolute bottom-[3%] left-0 right-0 z-10 mx-auto mt-auto w-fit md:bottom-auto md:left-auto md:right-[12%] md:top-[42%] md:ml-28 md:mt-8 md:w-fit">
             <Typography
-              className="text-md lg:ml-22 mt-auto px-8 py-4 text-center md:text-5xl lg:mr-24 lg:py-1 lg:text-left lg:text-2xl lg:font-light"
+              className="text-md md:ml-22 mt-auto px-16 py-4 text-center font-light md:mr-24 md:px-8 md:py-1 md:text-left md:text-2xl"
               variant="h1"
               color="text-white"
               background="bg-black"
             >
               НОВЫЙ УРОВЕНЬ
-              <br className="lg:hidden" /> КОМФОРТА,
+              <br className="md:hidden" /> КОМФОРТА,
               <Divider
-                className="mt-2 lg:hidden"
+                className="mt-2 md:hidden"
                 color="bg-white"
-                thickness="7px"
+                thickness="0.3rem"
               />
-              <br className="hidden lg:block" />
-              <span className="text-xl font-light text-white md:text-2xl lg:text-2xl lg:uppercase">
+              <br className="hidden md:block" />
+              <span className="text-xl font-light uppercase text-white md:text-2xl">
                 когда каждый метр работает на вас
               </span>
             </Typography>

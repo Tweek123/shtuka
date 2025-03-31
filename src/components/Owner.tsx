@@ -13,10 +13,10 @@ const Owner = ({
 }) => {
   return (
     <div className="flex flex-col items-center">
-      <Avatar className="mb-8 lg:hidden" src={src} size="lg" />
-      <Avatar className="mb-8 hidden lg:block" src={src} />
+      <Avatar className="mb-8 md:hidden" src={src} size="lg" />
+      <Avatar className="mb-8 hidden md:block" src={src} />
       <Typography
-        className="mb-6 whitespace-pre text-center font-bold md:text-xl lg:text-xs"
+        className="mb-6 whitespace-pre text-center font-bold md:text-xs"
         fontFamily="ArialBlack"
         color="text-black"
         variant="h2"

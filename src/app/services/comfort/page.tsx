@@ -63,7 +63,7 @@ export default function Services() {
     <main className="">
       <Section>
         <Container className="">
-          <div className="lg:-mx:16 -mx-4 -my-8 flex min-h-screen flex-grow flex-col items-center justify-center bg-[#111] md:-mx-8 md:-my-12 lg:-my-16">
+          <div className="lg:-mx:16 -mx-4 -my-8 flex min-h-screen flex-grow flex-col items-center justify-center bg-[#111] md:-mx-16 md:-my-16 lg:-my-16">
             <Typography
               className="text-center text-6xl font-normal uppercase text-white md:text-8xl lg:text-6xl"
               variant="h1"
@@ -75,11 +75,11 @@ export default function Services() {
       </Section>
       <Section>
         <Container>
-          <div className="-mx-4 -my-8 grid grow grid-cols-1 md:-mx-8 md:-my-12 md:grid-cols-4 md:[grid-template-areas:'col-1_col-1_col-2_col-2'_'col-3_col-3_col-3_col-3'] lg:-my-16 lg:grid-cols-3 lg:[grid-template-areas:'col-1_col-2_col-3']">
+          <div className="-mx-4 -my-8 grid grow grid-cols-1 md:-mx-16 md:-my-16 md:grid-cols-4 md:[grid-template-areas:'col-1_col-1_col-2_col-2'_'col-3_col-3_col-3_col-3'] lg:-my-16 lg:grid-cols-3 lg:[grid-template-areas:'col-1_col-2_col-3']">
             <div className="flex flex-grow flex-col bg-[#fed841] px-4 py-8 md:px-8 md:py-12 md:[grid-area:col-1] lg:py-16">
               <div className="flex flex-col">
                 <Typography
-                  className="font-VarelaRound mb-6 text-sm font-light uppercase leading-relaxed text-[#eb2f5b] md:mb-8 md:text-2xl lg:text-base"
+                  className="mb-6 font-VarelaRound text-sm font-light uppercase leading-relaxed text-[#eb2f5b] md:mb-8 md:text-2xl lg:text-base"
                   variant="h1"
                 >
                   частые вопросы
@@ -88,7 +88,7 @@ export default function Services() {
                   <div className="flex flex-col">
                     <Typography
                       variant="h1"
-                      className="text-primary font-womby mb-4 whitespace-pre text-3xl font-normal uppercase leading-tight text-[#111] group-hover:text-white md:text-3xl lg:mb-8 lg:text-center lg:text-xl"
+                      className="text-primary mb-4 whitespace-pre font-womby text-3xl font-normal uppercase leading-tight text-[#111] group-hover:text-white md:text-3xl lg:mb-8 lg:text-center lg:text-xl"
                     >
                       {title}
                     </Typography>
@@ -96,13 +96,13 @@ export default function Services() {
                       {items.map(({ text, subtext }) => (
                         <div className="flex flex-col">
                           <Typography
-                            className="text-primary font-womby mb-4 text-center text-3xl font-bold uppercase leading-tight text-white md:whitespace-pre md:text-center md:text-7xl lg:mb-2"
+                            className="text-primary mb-4 text-center font-womby text-3xl font-bold uppercase leading-tight text-white md:whitespace-pre md:text-center md:text-7xl lg:mb-2"
                             variant="h1"
                           >
                             {text}
                           </Typography>
                           <Typography
-                            className="font-VarelaRound mb-6 text-center text-sm font-light uppercase leading-relaxed text-black md:mb-8 md:whitespace-pre md:text-center md:text-sm"
+                            className="mb-6 text-center font-VarelaRound text-sm font-light uppercase leading-relaxed text-black md:mb-8 md:whitespace-pre md:text-center md:text-sm"
                             variant="h1"
                           >
                             {subtext}
@@ -123,20 +123,20 @@ export default function Services() {
             </div>
             <div className="flex flex-col bg-black px-4 py-8 md:[grid-area:col-3]">
               <Typography
-                className="font-VarelaRound mb-6 text-sm font-light uppercase leading-relaxed text-[#eb2f5b] md:mb-8 md:text-2xl lg:text-base"
+                className="mb-6 font-VarelaRound text-sm font-light uppercase leading-relaxed text-[#eb2f5b] md:mb-8 md:text-2xl lg:text-base"
                 variant="h1"
               >
                 состав альбома проекта "КОМФОРТ"
               </Typography>
               <Typography
-                className="font-womby mb-4 text-3xl font-bold uppercase leading-tight text-white md:text-3xl"
+                className="mb-4 font-womby text-3xl font-bold uppercase leading-tight text-white md:text-3xl"
                 variant="h1"
               >
                 Более 30 листов чертежей
               </Typography>
               <Typography
                 variant="h1"
-                className="text-primary font-womby mb-8 text-base font-bold leading-relaxed text-white group-hover:text-white md:text-xl lg:text-base"
+                className="text-primary mb-8 font-womby text-base font-bold leading-relaxed text-white group-hover:text-white md:text-xl lg:text-base"
               >
                 <ul className="list-inside list-none gap-4">
                   {list.map((text, i) => (
@@ -155,7 +155,7 @@ export default function Services() {
       </Section>
       <Section>
         <Container>
-          <div className="-my-8 grid grow grid-cols-1 md:-mx-8 md:-my-12 md:grid-cols-2 lg:-my-16 lg:grid-cols-3">
+          <div className="-my-8 grid grow grid-cols-1 md:-mx-16 md:-my-16 md:grid-cols-2 lg:-my-16 lg:grid-cols-3">
             <div className="relative -mx-4 flex aspect-square flex-grow flex-col md:mx-0 md:aspect-auto">
               <Image
                 src="/images/services/comfort/livingroom.jpg"
